@@ -1,0 +1,411 @@
+NewReimburseForm As screen:
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+
+    Container1 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =768
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =1366
+        ZIndex: =2
+
+        Container3_2 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Height: =545
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =1134
+            X: =227
+            Y: =223
+            ZIndex: =5
+
+            Label6_2 As label:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =13
+                Text: ="First Name"
+                X: =568
+                Y: =18
+                ZIndex: =2
+
+            Label4_14 As label:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =13
+                Text: ="Email"
+                X: =568
+                Y: =96
+                ZIndex: =8
+
+            Label4_15 As label:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =13
+                Text: ="Start Date"
+                X: =44
+                Y: =169
+                ZIndex: =10
+
+            Label4_21 As label:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =13
+                Text: ="Comment"
+                Width: =111
+                X: =44
+                Y: =310
+                ZIndex: =11
+
+            Label4_20 As label:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =13
+                Text: ="Invoice "
+                X: =568
+                Y: =238
+                ZIndex: =12
+
+            DatePicker2_4 As datepicker:
+                BorderColor: =RGBA(3, 91, 108, 1)
+                CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                HoverDateFill: =RGBA(205, 209, 213, 1)
+                IconBackground: =RGBA(100, 118, 132, 1)
+                OnSelect: |
+                    =If(DatePicker2_4.SelectedDate <= Today(), true, Notify("Please select a past date.", NotificationType.Error))
+                SelectedDateFill: =RGBA(100, 118, 132, 1)
+                Width: =320
+                X: =194
+                Y: =169
+                ZIndex: =15
+
+            DatePicker2_5 As datepicker:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                HoverDateFill: =RGBA(205, 209, 213, 1)
+                IconBackground: =RGBA(100, 118, 132, 1)
+                OnSelect: |
+                    =If(DatePicker2_5.SelectedDate <= Today(), true, Notify("Please select a past date.", NotificationType.Error))
+                SelectedDateFill: =RGBA(100, 118, 132, 1)
+                Width: =320
+                X: =718
+                Y: =169
+                ZIndex: =16
+
+            AddMediaWithImage1_2 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =17
+
+                UploadedImage1_2 As image:
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Height: =40
+                    Image: =If(IsBlank(AddMediaButton1_2.Media), SampleImage, AddMediaButton1_2.Media)
+                    ImagePosition: =ImagePosition.Fill
+                    Tooltip: ="Select Your Manager"
+                    Width: =320
+                    X: =718
+                    Y: =238
+                    ZIndex: =18
+
+                AddMediaButton1_2 As addMedia:
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =40
+                    Size: =15
+                    Tooltip: ="Select Your Manager"
+                    Width: =320
+                    X: =718
+                    Y: =238
+                    ZIndex: =19
+
+            TextInput3_2 As text:
+                BorderColor: =RGBA(3, 91, 108, 1)
+                BorderThickness: =2
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =""
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                FocusedBorderThickness: =4
+                Height: =104
+                HoverBorderColor: =RGBA(32, 54, 71, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(205, 209, 213, 1)
+                Reset: =true
+                Size: =13
+                X: =194
+                Y: =310
+                ZIndex: =20
+
+            Button2_2 As button:
+                BorderColor: =RGBA(3, 91, 108, 1)
+                Color: =RGBA(3, 91, 108, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Semibold
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =RGBA(3, 91, 108, 1)
+                OnSelect: =Navigate('Dashboard New Screen')
+                Size: =15
+                Text: ="Cancel"
+                X: =62
+                Y: =458
+                ZIndex: =22
+
+            Label4_19 As label:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =13
+                Text: ="Total Amount"
+                X: =44
+                Y: =239
+                ZIndex: =24
+
+            Dropdown1_2 As dropdown:
+                BorderColor: =RGBA(3, 91, 108, 1)
+                ChevronBackground: =RGBA(3, 91, 108, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                Default: ="Select Your Manager"
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Height: =43
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(205, 209, 213, 1)
+                Items: =Distinct(Users,'Email Id')
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(32, 54, 71, 1)
+                Reset: =true
+                SelectionFill: =RGBA(100, 118, 132, 1)
+                Size: =13
+                Width: =320
+                X: =194
+                Y: =93
+                ZIndex: =27
+
+            Label4_18 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =13
+                Text: ="Manager"
+                X: =36
+                Y: =96
+                ZIndex: =28
+
+            TextInput2_15 As text:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                BorderThickness: =2
+                Color: =RGBA(0, 0, 0, 1)
+                Default: =
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                FocusedBorderThickness: =4
+                Format: =TextFormat.Number
+                HoverBorderColor: =RGBA(32, 54, 71, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(205, 209, 213, 1)
+                Size: =13
+                X: =194
+                Y: =239
+                ZIndex: =30
+
+            Button7_8 As button:
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(3, 91, 108, 1)
+                FontWeight: =FontWeight.Semibold
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =RGBA(3, 119, 143, 1)
+                OnSelect: |
+                    =Patch(
+                        RR_Employee_sp,
+                        Defaults(RR_Employee_sp),
+                        {
+                            'First Name': Label22_5.Text,
+                            Email: Label22_4.Text,
+                            'Start Date': DatePicker2_4.SelectedDate,
+                            'End Date': DatePicker2_5.SelectedDate,
+                            EmployeeID:Label22_3.Text,
+                            Comments:TextInput3_2.Text,
+                            Invoice: UploadedImage1_2.Image,
+                           'Total Amount': Value(TextInput2_15.Text),
+                            Category: Gallery3_2.Selected.'Expense Category'.Value,
+                            Manager_Name:Dropdown1_2.Selected.Value   
+                        }
+                    );
+                    //Reset(Label22);
+                    //Reset(Label22_1);
+                    Reset(TextInput2_15);
+                    //Reset(Label22_2);
+                    Reset(TextInput3_2);
+                    Reset(DatePicker2_4);
+                    Reset(DatePicker2_5);
+                    Reset(AddMediaButton1_2);
+                    Refresh(RR_Employee_sp);
+                    Reset(Dropdown1_2);
+                    Reset(Gallery3_2);
+                    Navigate('Dashboard New Screen')
+                Size: =15
+                Text: ="Submit"
+                X: =852
+                Y: =458
+                ZIndex: =31
+
+            Label22_3 As label:
+                BorderColor: =RGBA(3, 91, 108, 1)
+                BorderThickness: =1
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: =LookUp(Users,'Email Id'=User().Email).Title
+                Width: =320
+                X: =194
+                Y: =18
+                ZIndex: =32
+
+            Label22_5 As label:
+                BorderColor: =RGBA(3, 91, 108, 1)
+                BorderThickness: =1
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: =LookUp(Users,'Email Id'=User().Email).'Full Name'
+                Width: =320
+                X: =718
+                Y: =18
+                ZIndex: =33
+
+            Label22_4 As label:
+                BorderColor: =RGBA(3, 91, 108, 1)
+                BorderThickness: =1
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: =LookUp(Users,'Email Id'=User().Email).'Email Id'
+                Width: =320
+                X: =718
+                Y: =93
+                ZIndex: =34
+
+        Container2_2 As groupContainer.manualLayoutContainer:
+            Height: =143
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =1139
+            X: =227
+            Y: =47
+            ZIndex: =6
+
+            Label3_2 As label:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.Lato
+                Height: =56
+                Text: ="Select the type of the Reimbusement !"
+                Width: =483
+                X: =28
+                ZIndex: =1
+
+            "Gallery3_2 As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0'":
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Default: =Blank()
+                DelayItemLoading: =true
+                Height: =89
+                Items: =RR_Lookup_Category
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                ShowScrollbar: =false
+                TemplatePadding: =0
+                TemplateSize: =92
+                Width: =1138
+                WrapCount: =4
+                Y: =54
+                ZIndex: =1
+
+                Label21_1 As label:
+                    Align: =Align.Center
+                    BorderColor: =RGBA(3, 91, 108, 1)
+                    BorderThickness: =3
+                    Color: |-
+                        =If(
+                            ThisItem.IsSelected,
+                            
+                            RGBA(
+                               255,255,255,1
+                            ),RGBA(
+                               3,93,108,1
+                            )
+                        )
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Fill: |-
+                        =If(
+                            ThisItem.IsSelected,
+                            RGBA(
+                                3,
+                                91,
+                                108,
+                                1
+                            ),
+                            RGBA(
+                                255,
+                                255,
+                                255,
+                                1
+                            )
+                        )
+                    Height: =49
+                    OnSelect: =Select(Parent)
+                    PressedColor: =RGBA(3,91,108,1)
+                    PressedFill: =RGBA(3,91,108,1)
+                    Size: =15
+                    Text: =ThisItem.'Expense Category'.Value
+                    Width: =253
+                    X: =15
+                    Y: =24
+                    ZIndex: =4
+
+    RR_NavigationBar_5 As Old_RR_NavBar:
+        ZIndex: =3
+

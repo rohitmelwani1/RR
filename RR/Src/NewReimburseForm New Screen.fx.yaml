@@ -1,0 +1,1191 @@
+"'NewReimburseForm New Screen' As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+
+    Container35_1 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =Parent.Width
+        ZIndex: =1
+
+        Container36_1 As groupContainer.verticalAutoLayoutContainer:
+            FillPortions: =0
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =Parent.Width*.168
+            ZIndex: =1
+
+            RR_NavigationBar_26 As RR_NavigationBar_20:
+                CurrentScreen: ="Dashboard"
+                Height: =RR_NavigationBar_26.navHeight
+                LayoutMinHeight: =640
+                LayoutMinWidth: =640
+                navItem: =If(ManagerView=false,NavEmployeeView,NavManagerView)
+                Width: =RR_NavigationBar_26.navWidth
+
+        Container37_1 As groupContainer.verticalAutoLayoutContainer:
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            ZIndex: =2
+
+            Container13_2 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
+                FillPortions: =0
+                Height: =Parent.Height*.25
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingBottom: =20
+                PaddingLeft: =20
+                PaddingRight: =20
+                PaddingTop: =20
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =Parent.Width
+                ZIndex: =1
+
+                Container4 As groupContainer.verticalAutoLayoutContainer:
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    ZIndex: =1
+
+                    Container7 As groupContainer.horizontalAutoLayoutContainer:
+                        FillPortions: =0
+                        Height: =Parent.Height*.4
+                        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        PaddingLeft: =20
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        ZIndex: =1
+
+                        Label3_3 As label:
+                            BorderColor: =RGBA(32, 54, 71, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.Lato
+                            FontWeight: =FontWeight.Bold
+                            Height: =56
+                            Size: =If(Self.Width>=450,17,If(And(Self.Width<=170,Self.Width>=150),15,13))
+                            Text: ="Select the type of the Reimbusement !"
+                            Width: =Parent.Width*.4
+                            X: =28
+                            ZIndex: =1
+
+                        Arrow1_5 As arrow.backArrow:
+                            AlignInContainer: =AlignInContainer.Center
+                            BorderColor: =RGBA(32, 54, 71, 1)
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(3, 91, 108, 1)
+                            Height: =40
+                            OnSelect: =Back()
+                            Tooltip: ="Back"
+                            Width: =40
+                            X: =1076
+                            Y: =13
+                            ZIndex: =2
+
+                    Container22 As groupContainer.horizontalAutoLayoutContainer:
+                        FillPortions: =0
+                        Height: |-
+                            =Parent.Height*.6
+                            //If(Container13_2.Height>=190,Parent.Height*.6,Parent.Height*.4)
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        ZIndex: =2
+
+                        "Gallery3_3 As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0'":
+                            AlignInContainer: =AlignInContainer.SetByContainer
+                            BorderColor: =RGBA(32, 54, 71, 1)
+                            Default: =Blank()
+                            DelayItemLoading: =true
+                            Height: =Parent.Height
+                            Items: =RR_Lookup_Category
+                            Layout: =Layout.Vertical
+                            LayoutMinHeight: =287
+                            LayoutMinWidth: =320
+                            LoadingSpinner: =LoadingSpinner.Data
+                            ShowScrollbar: =false
+                            TemplatePadding: =0
+                            TemplateSize: =92
+                            Width: =1138
+                            WrapCount: =4
+                            Y: =54
+                            ZIndex: =1
+
+                            Container29 As groupContainer.horizontalAutoLayoutContainer:
+                                DropShadow: =DropShadow.Regular
+                                Height: |-
+                                    =//Parent.TemplateHeight*.8
+                                    If(Container13_2.Height>=190,Parent.TemplateHeight*.8,Parent.TemplateHeight*.4)
+                                LayoutAlignItems: =LayoutAlignItems.Center
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMode: =LayoutMode.Auto
+                                RadiusBottomLeft: =10
+                                RadiusBottomRight: =10
+                                RadiusTopLeft: =10
+                                RadiusTopRight: =10
+                                Width: =Parent.TemplateWidth*.9
+                                X: =Parent.TemplateWidth/2-Self.Width/2
+                                Y: =Parent.TemplateHeight/2-Self.Height/2
+                                ZIndex: =5
+
+                                Label21_2 As label:
+                                    Align: =Align.Center
+                                    AlignInContainer: =AlignInContainer.Center
+                                    BorderColor: =RGBA(3, 91, 108, 1)
+                                    BorderThickness: =3
+                                    Color: |-
+                                        =If(
+                                            ThisItem.IsSelected,
+                                            
+                                            RGBA(
+                                               255,255,255,1
+                                            ),RGBA(
+                                               3,93,108,1
+                                            )
+                                        )
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    Fill: |-
+                                        =If(
+                                            ThisItem.IsSelected,
+                                            RGBA(
+                                                3,
+                                                91,
+                                                108,
+                                                1
+                                            ),
+                                            RGBA(
+                                                255,
+                                                255,
+                                                255,
+                                                1
+                                            )
+                                        )
+                                    Height: =Parent.Height-6
+                                    OnSelect: =Select(Gallery3_3)
+                                    PressedColor: =RGBA(3,91,108,1)
+                                    PressedFill: =RGBA(3,91,108,1)
+                                    Size: |-
+                                        =//If(Self.Width>=170,15,If(And(Self.Width<=170,Self.Width>=150),12,10))
+                                        If(Container13_2.Height>=190,15,12)
+                                    Text: =ThisItem.'Expense Category'.Value
+                                    Width: =Parent.Width-5
+                                    Y: =24
+                                    ZIndex: =1
+
+            Container40_1 As groupContainer.horizontalAutoLayoutContainer:
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                ZIndex: =3
+
+                Container46_1 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Center
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    Width: =Parent.Width
+                    ZIndex: =2
+
+                    Container30 As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Center
+                        FillPortions: =0
+                        Height: =Parent.Height*.16
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                        Container34 As groupContainer.horizontalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
+                            Height: =Parent.Height
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            ZIndex: =1
+
+                            Container39 As groupContainer.verticalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Center
+                                FillPortions: =0
+                                Height: =Parent.Height
+                                LayoutDirection: =LayoutDirection.Vertical
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                PaddingLeft: =80
+                                RadiusBottomLeft: =4
+                                RadiusBottomRight: =4
+                                RadiusTopLeft: =4
+                                RadiusTopRight: =4
+                                Width: =Parent.Width*.4
+                                ZIndex: =3
+
+                                Label6_3 As label:
+                                    AlignInContainer: =AlignInContainer.Start
+                                    BorderColor: =RGBA(32, 54, 71, 1)
+                                    Color: =RGBA(0, 0, 0, 1)
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    FillPortions: =1
+                                    FontWeight: =FontWeight.Bold
+                                    Size: =If(Self.Width>=170,15,If(And(Self.Width<=170,Self.Width>=150),12,10))
+                                    Text: ="Employee ID"
+                                    Width: =Parent.Width*.65
+                                    X: =568
+                                    Y: =18
+                                    ZIndex: =1
+
+                            Container41 As groupContainer.verticalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Center
+                                Height: =Parent.Height
+                                LayoutAlignItems: =LayoutAlignItems.Center
+                                LayoutDirection: =LayoutDirection.Vertical
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                RadiusBottomLeft: =4
+                                RadiusBottomRight: =4
+                                RadiusTopLeft: =4
+                                RadiusTopRight: =4
+                                ZIndex: =4
+
+                                Label22_6 As label:
+                                    BorderColor: =RGBA(3, 91, 108, 1)
+                                    BorderThickness: =1
+                                    Color: =RGBA(0, 0, 0, 1)
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    Height: =Parent.Height*.4
+                                    Size: |
+                                        =If(Self.Width>=330,15,If(And(Self.Width<300,Self.Width>270),12,10))
+                                    Text: =LookUp(Users,'Email Id'=User().Email).Title
+                                    Width: =Parent.Width*.9
+                                    X: =194
+                                    Y: =18
+                                    ZIndex: =1
+
+                        Container34_2 As groupContainer.horizontalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
+                            Height: =Parent.Height
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            ZIndex: =2
+
+                            Container39_1 As groupContainer.verticalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Center
+                                FillPortions: =0
+                                Height: =Parent.Height
+                                LayoutDirection: =LayoutDirection.Vertical
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                PaddingLeft: =80
+                                RadiusBottomLeft: =4
+                                RadiusBottomRight: =4
+                                RadiusTopLeft: =4
+                                RadiusTopRight: =4
+                                Width: =Parent.Width*.4
+                                ZIndex: =3
+
+                                Label6_4 As label:
+                                    BorderColor: =RGBA(32, 54, 71, 1)
+                                    Color: =RGBA(0, 0, 0, 1)
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    FillPortions: =1
+                                    FontWeight: =FontWeight.Bold
+                                    Size: =If(Self.Width>=170,15,If(And(Self.Width<=170,Self.Width>=150),12,10))
+                                    Text: ="Full Name"
+                                    Width: =Parent.Width*.65
+                                    X: =568
+                                    Y: =18
+                                    ZIndex: =1
+
+                            Container43 As groupContainer.verticalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Center
+                                FillPortions: =0
+                                Height: =Parent.Height
+                                LayoutAlignItems: =LayoutAlignItems.Center
+                                LayoutDirection: =LayoutDirection.Vertical
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                RadiusBottomLeft: =4
+                                RadiusBottomRight: =4
+                                RadiusTopLeft: =4
+                                RadiusTopRight: =4
+                                Width: =Parent.Width*.6
+                                ZIndex: =4
+
+                                Label22_7 As label:
+                                    BorderColor: =RGBA(3, 91, 108, 1)
+                                    BorderThickness: =1
+                                    Color: =RGBA(0, 0, 0, 1)
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    Height: =Parent.Height*.4
+                                    Size: |
+                                        =If(Self.Width>=330,15,If(And(Self.Width<300,Self.Width>270),12,10))
+                                    Text: =LookUp(Users,'Email Id'=User().Email).'Full Name'
+                                    Width: =Parent.Width*.9
+                                    X: =718
+                                    Y: =18
+                                    ZIndex: =1
+
+                    Container30_3 As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Center
+                        FillPortions: =0
+                        Height: =Parent.Height*.16
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        Width: =Parent.Width
+                        ZIndex: =2
+
+                        Container34_3 As groupContainer.horizontalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
+                            Height: =Parent.Height
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            ZIndex: =1
+
+                            Container44 As groupContainer.verticalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Center
+                                FillPortions: =0
+                                Height: =Parent.Height
+                                LayoutDirection: =LayoutDirection.Vertical
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                PaddingLeft: =80
+                                RadiusBottomLeft: =4
+                                RadiusBottomRight: =4
+                                RadiusTopLeft: =4
+                                RadiusTopRight: =4
+                                Width: =Parent.Width*.4
+                                ZIndex: =3
+
+                                Label4_22 As label:
+                                    AlignInContainer: =AlignInContainer.Start
+                                    BorderColor: =RGBA(32, 54, 71, 1)
+                                    Color: =RGBA(0, 0, 0, 1)
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    FillPortions: =1
+                                    FontWeight: =FontWeight.Bold
+                                    Size: =If(Self.Width>=170,15,If(And(Self.Width<=170,Self.Width>=150),12,10))
+                                    Text: ="Manager"
+                                    Width: =Parent.Width*.65
+                                    X: =36
+                                    Y: =96
+                                    ZIndex: =1
+
+                            Container48 As groupContainer.verticalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Center
+                                FillPortions: =0
+                                Height: =Parent.Height
+                                LayoutAlignItems: =LayoutAlignItems.Center
+                                LayoutDirection: =LayoutDirection.Vertical
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                RadiusBottomLeft: =4
+                                RadiusBottomRight: =4
+                                RadiusTopLeft: =4
+                                RadiusTopRight: =4
+                                Width: =Parent.Width*.6
+                                ZIndex: =4
+
+                                Dropdown1_3 As dropdown:
+                                    BorderColor: =RGBA(3, 91, 108, 1)
+                                    ChevronBackground: =RGBA(3, 91, 108, 1)
+                                    ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                                    ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                                    ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+                                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                                    Default: ="Select Your Manager"
+                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    DisabledFill: =RGBA(244, 244, 244, 1)
+                                    Height: =Parent.Height*.4
+                                    HoverColor: =RGBA(0, 0, 0, 1)
+                                    HoverFill: =RGBA(205, 209, 213, 1)
+                                    Items: =Distinct(Users,'Email Id')
+                                    PressedColor: =RGBA(255, 255, 255, 1)
+                                    PressedFill: =RGBA(32, 54, 71, 1)
+                                    Reset: =true
+                                    SelectionFill: =RGBA(100, 118, 132, 1)
+                                    Size: |
+                                        =If(Self.Width>=330,15,If(And(Self.Width<300,Self.Width>270),12,10))
+                                    Width: =Parent.Width*.9
+                                    X: =194
+                                    Y: =93
+                                    ZIndex: =1
+
+                        Container34_4 As groupContainer.horizontalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
+                            Height: =Parent.Height
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            ZIndex: =2
+
+                            Container49 As groupContainer.verticalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Center
+                                FillPortions: =0
+                                Height: =Parent.Height
+                                LayoutDirection: =LayoutDirection.Vertical
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                PaddingLeft: =80
+                                RadiusBottomLeft: =4
+                                RadiusBottomRight: =4
+                                RadiusTopLeft: =4
+                                RadiusTopRight: =4
+                                Width: =Parent.Width*.4
+                                ZIndex: =3
+
+                                Label4_16 As label:
+                                    BorderColor: =RGBA(32, 54, 71, 1)
+                                    Color: =RGBA(0, 0, 0, 1)
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    FillPortions: =1
+                                    FontWeight: =FontWeight.Bold
+                                    Size: =If(Self.Width>=170,15,If(And(Self.Width<=170,Self.Width>=150),12,10))
+                                    Text: ="Email"
+                                    Width: =Parent.Width*.65
+                                    X: =568
+                                    Y: =96
+                                    ZIndex: =1
+
+                            Container50 As groupContainer.verticalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Center
+                                FillPortions: =0
+                                Height: =Parent.Height
+                                LayoutAlignItems: =LayoutAlignItems.Center
+                                LayoutDirection: =LayoutDirection.Vertical
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                RadiusBottomLeft: =4
+                                RadiusBottomRight: =4
+                                RadiusTopLeft: =4
+                                RadiusTopRight: =4
+                                Width: =Parent.Width*.6
+                                ZIndex: =4
+
+                                Label22_8 As label:
+                                    BorderColor: =RGBA(3, 91, 108, 1)
+                                    BorderThickness: =1
+                                    Color: =RGBA(0, 0, 0, 1)
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    Height: =Parent.Height*.4
+                                    Size: |
+                                        =If(Self.Width>=330,15,If(And(Self.Width<300,Self.Width>270),12,10))
+                                    Text: =LookUp(Users,'Email Id'=User().Email).'Email Id'
+                                    Width: =Parent.Width*.9
+                                    X: =718
+                                    Y: =93
+                                    ZIndex: =1
+
+                    Container30_4 As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Center
+                        FillPortions: =0
+                        Height: =Parent.Height*.16
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        Width: =Parent.Width
+                        ZIndex: =3
+
+                        Container34_5 As groupContainer.horizontalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
+                            Height: =Parent.Height
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            ZIndex: =1
+
+                            Container51 As groupContainer.verticalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Center
+                                FillPortions: =0
+                                Height: =Parent.Height
+                                LayoutDirection: =LayoutDirection.Vertical
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                PaddingLeft: =80
+                                RadiusBottomLeft: =4
+                                RadiusBottomRight: =4
+                                RadiusTopLeft: =4
+                                RadiusTopRight: =4
+                                Width: =Parent.Width*.4
+                                ZIndex: =3
+
+                                Label4_23 As label:
+                                    AlignInContainer: =AlignInContainer.Start
+                                    BorderColor: =RGBA(32, 54, 71, 1)
+                                    Color: =RGBA(0, 0, 0, 1)
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    FillPortions: =1
+                                    FontWeight: =FontWeight.Bold
+                                    Size: =If(Self.Width>=170,15,If(And(Self.Width<=170,Self.Width>=150),12,10))
+                                    Text: ="Start Date"
+                                    Width: =Parent.Width*.65
+                                    X: =44
+                                    Y: =169
+                                    ZIndex: =1
+
+                            Container52 As groupContainer.verticalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Center
+                                FillPortions: =0
+                                Height: =Parent.Height
+                                LayoutAlignItems: =LayoutAlignItems.Center
+                                LayoutDirection: =LayoutDirection.Vertical
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                RadiusBottomLeft: =4
+                                RadiusBottomRight: =4
+                                RadiusTopLeft: =4
+                                RadiusTopRight: =4
+                                Width: =Parent.Width*.6
+                                ZIndex: =4
+
+                                DatePicker2_6 As datepicker:
+                                    BorderColor: =RGBA(3, 91, 108, 1)
+                                    CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+                                    Color: =RGBA(0, 0, 0, 1)
+                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    DisabledFill: =RGBA(244, 244, 244, 1)
+                                    Height: =Parent.Height*.4
+                                    HoverDateFill: =RGBA(205, 209, 213, 1)
+                                    IconBackground: =RGBA(100, 118, 132, 1)
+                                    OnSelect: |
+                                        =If(DatePicker2_6.SelectedDate <= Today(), true, Notify("Please select a past date.", NotificationType.Error))
+                                    SelectedDateFill: =RGBA(100, 118, 132, 1)
+                                    Size: |
+                                        =If(Self.Width>=330,15,If(And(Self.Width<300,Self.Width>270),12,10))
+                                    Width: =Parent.Width*.9
+                                    X: =150
+                                    Y: =169
+                                    ZIndex: =1
+
+                        Container34_6 As groupContainer.horizontalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
+                            Height: =Parent.Height
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            ZIndex: =2
+
+                            Container53 As groupContainer.verticalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Center
+                                FillPortions: =0
+                                Height: =Parent.Height
+                                LayoutDirection: =LayoutDirection.Vertical
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                PaddingLeft: =80
+                                RadiusBottomLeft: =4
+                                RadiusBottomRight: =4
+                                RadiusTopLeft: =4
+                                RadiusTopRight: =4
+                                Width: =Parent.Width*.4
+                                ZIndex: =3
+
+                                Label4_24 As label:
+                                    BorderColor: =RGBA(32, 54, 71, 1)
+                                    Color: =RGBA(0, 0, 0, 1)
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    FillPortions: =1
+                                    FontWeight: =FontWeight.Bold
+                                    Size: =If(Self.Width>=170,15,If(And(Self.Width<=170,Self.Width>=150),12,10))
+                                    Text: ="End Date"
+                                    Width: =Parent.Width*.65
+                                    X: =44
+                                    Y: =169
+                                    ZIndex: =1
+
+                            Container54 As groupContainer.verticalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Center
+                                FillPortions: =0
+                                Height: =Parent.Height
+                                LayoutAlignItems: =LayoutAlignItems.Center
+                                LayoutDirection: =LayoutDirection.Vertical
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                RadiusBottomLeft: =4
+                                RadiusBottomRight: =4
+                                RadiusTopLeft: =4
+                                RadiusTopRight: =4
+                                Width: =Parent.Width*.6
+                                ZIndex: =4
+
+                                DatePicker2_7 As datepicker:
+                                    BorderColor: =RGBA(32, 54, 71, 1)
+                                    CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+                                    Color: =RGBA(0, 0, 0, 1)
+                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    DisabledFill: =RGBA(244, 244, 244, 1)
+                                    Height: =Parent.Height*.4
+                                    HoverDateFill: =RGBA(205, 209, 213, 1)
+                                    IconBackground: =RGBA(100, 118, 132, 1)
+                                    OnSelect: |
+                                        =If(DatePicker2_7.SelectedDate <= Today(), true, Notify("Please select a past date.", NotificationType.Error))
+                                    SelectedDateFill: =RGBA(100, 118, 132, 1)
+                                    Size: |
+                                        =If(Self.Width>=330,15,If(And(Self.Width<300,Self.Width>270),12,10))
+                                    Width: =Parent.Width*.9
+                                    X: =718
+                                    Y: =169
+                                    ZIndex: =1
+
+                    Container30_5 As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Center
+                        FillPortions: =0
+                        Height: =Parent.Height*.16
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        Width: =Parent.Width
+                        ZIndex: =4
+
+                        Container34_7 As groupContainer.horizontalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
+                            Height: =Parent.Height
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            ZIndex: =1
+
+                            Container55 As groupContainer.verticalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Center
+                                FillPortions: =0
+                                Height: =Parent.Height
+                                LayoutDirection: =LayoutDirection.Vertical
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                PaddingLeft: =80
+                                RadiusBottomLeft: =4
+                                RadiusBottomRight: =4
+                                RadiusTopLeft: =4
+                                RadiusTopRight: =4
+                                Width: =Parent.Width*.4
+                                ZIndex: =3
+
+                                Label4_25 As label:
+                                    BorderColor: =RGBA(32, 54, 71, 1)
+                                    Color: =RGBA(0, 0, 0, 1)
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    FillPortions: =1
+                                    FontWeight: =FontWeight.Bold
+                                    Size: =If(Self.Width>=170,15,If(And(Self.Width<=170,Self.Width>=150),12,10))
+                                    Text: ="Total Amount"
+                                    Width: =Parent.Width*.65
+                                    X: =44
+                                    Y: =239
+                                    ZIndex: =1
+
+                            Container56 As groupContainer.verticalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Center
+                                FillPortions: =0
+                                Height: =Parent.Height
+                                LayoutAlignItems: =LayoutAlignItems.Center
+                                LayoutDirection: =LayoutDirection.Vertical
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                RadiusBottomLeft: =4
+                                RadiusBottomRight: =4
+                                RadiusTopLeft: =4
+                                RadiusTopRight: =4
+                                Width: =Parent.Width*.6
+                                ZIndex: =4
+
+                                TextInput2_16 As text:
+                                    BorderColor: =RGBA(32, 54, 71, 1)
+                                    BorderThickness: =2
+                                    Color: =RGBA(0, 0, 0, 1)
+                                    Default: =
+                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    DisabledFill: =RGBA(244, 244, 244, 1)
+                                    FocusedBorderThickness: =4
+                                    Format: =TextFormat.Number
+                                    Height: =Parent.Height*.4
+                                    HoverBorderColor: =RGBA(32, 54, 71, 1)
+                                    HoverColor: =RGBA(0, 0, 0, 1)
+                                    HoverFill: =RGBA(205, 209, 213, 1)
+                                    Size: |
+                                        =If(Self.Width>=330,15,If(And(Self.Width<300,Self.Width>270),12,10))
+                                    Width: =Parent.Width*.9
+                                    X: =150
+                                    Y: =239
+                                    ZIndex: =1
+
+                        Container34_8 As groupContainer.horizontalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
+                            Height: =Parent.Height
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            ZIndex: =2
+
+                            Container58 As groupContainer.verticalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Center
+                                FillPortions: =0
+                                Height: =Parent.Height
+                                LayoutDirection: =LayoutDirection.Vertical
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                PaddingLeft: =80
+                                RadiusBottomLeft: =4
+                                RadiusBottomRight: =4
+                                RadiusTopLeft: =4
+                                RadiusTopRight: =4
+                                Width: =Parent.Width*.4
+                                ZIndex: =1
+
+                                Label4_26 As label:
+                                    BorderColor: =RGBA(32, 54, 71, 1)
+                                    Color: =RGBA(0, 0, 0, 1)
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    FillPortions: =1
+                                    FontWeight: =FontWeight.Bold
+                                    Size: =If(Self.Width>=170,15,If(And(Self.Width<=170,Self.Width>=150),12,10))
+                                    Text: ="Invoice "
+                                    Width: =Parent.Width*.65
+                                    X: =568
+                                    Y: =238
+                                    ZIndex: =1
+
+                            Container57 As groupContainer.verticalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Center
+                                FillPortions: =0
+                                Height: =Parent.Height
+                                LayoutDirection: =LayoutDirection.Vertical
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                RadiusBottomLeft: =4
+                                RadiusBottomRight: =4
+                                RadiusTopLeft: =4
+                                RadiusTopRight: =4
+                                Width: =Parent.Width*.6
+                                ZIndex: =3
+
+                                Container59 As groupContainer.manualLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =Parent.Height
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    RadiusBottomLeft: =4
+                                    RadiusBottomRight: =4
+                                    RadiusTopLeft: =4
+                                    RadiusTopRight: =4
+                                    Width: =Parent.Width
+                                    ZIndex: =1
+
+                                    AddMediaWithImage1_3 As group:
+                                        Height: =5
+                                        Width: =5
+                                        X: =-129
+                                        Y: =-218
+                                        ZIndex: =1
+
+                                        UploadedImage1_3 As image:
+                                            BorderColor: =RGBA(32, 54, 71, 1)
+                                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                            DisabledFill: =RGBA(244, 244, 244, 1)
+                                            Height: =Parent.Height*.4
+                                            Image: =If(IsBlank(AddMediaButton1_3.Media), SampleImage, AddMediaButton1_3.Media)
+                                            ImagePosition: =ImagePosition.Fill
+                                            Tooltip: ="Select Your Manager"
+                                            Width: =Parent.Width*.9
+                                            X: =Parent.Width/2-Self.Width/2
+                                            Y: =Parent.Height/2-Self.Height/2
+                                            ZIndex: =2
+
+                                        AddMediaButton1_3 As addMedia:
+                                            BorderColor: =RGBA(32, 54, 71, 1)
+                                            Color: =RGBA(0, 0, 0, 1)
+                                            Fill: =RGBA(255, 255, 255, 1)
+                                            Height: =Parent.Height*.4
+                                            Size: |
+                                                =If(Self.Width>=330,15,If(And(Self.Width<300,Self.Width>270),12,10))
+                                            Tooltip: ="Select Your Manager"
+                                            Width: =Parent.Width*.9
+                                            X: =Parent.Width/2-Self.Width/2
+                                            Y: =Parent.Height/2-Self.Height/2
+                                            ZIndex: =3
+
+                    Container30_6 As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Center
+                        FillPortions: =0
+                        Height: =Parent.Height*.16
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        Width: =Parent.Width
+                        ZIndex: =5
+
+                        Container34_9 As groupContainer.horizontalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
+                            Height: =Parent.Height
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            ZIndex: =1
+
+                            Container60 As groupContainer.verticalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Center
+                                DropShadow: =DropShadow.Light
+                                Height: =Parent.Height
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                RadiusBottomLeft: =4
+                                RadiusBottomRight: =4
+                                RadiusTopLeft: =4
+                                RadiusTopRight: =4
+                                ZIndex: =3
+
+                                Container63 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =Parent.Height
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    PaddingLeft: =80
+                                    RadiusBottomLeft: =4
+                                    RadiusBottomRight: =4
+                                    RadiusTopLeft: =4
+                                    RadiusTopRight: =4
+                                    Width: =Parent.Width*.4
+                                    ZIndex: =1
+
+                                    Label4_27 As label:
+                                        BorderColor: =RGBA(32, 54, 71, 1)
+                                        Color: =RGBA(0, 0, 0, 1)
+                                        DisabledColor: =RGBA(166, 166, 166, 1)
+                                        FillPortions: =1
+                                        FontWeight: =FontWeight.Bold
+                                        Size: =If(Self.Width>=170,15,If(And(Self.Width<=170,Self.Width>=150),12,10))
+                                        Text: ="Comment"
+                                        Width: =Parent.Width*.65
+                                        X: =44
+                                        Y: =310
+                                        ZIndex: =1
+
+                                Container64 As groupContainer.verticalAutoLayoutContainer:
+                                    AlignInContainer: =AlignInContainer.Center
+                                    FillPortions: =0
+                                    Height: =Parent.Height
+                                    LayoutAlignItems: =LayoutAlignItems.Center
+                                    LayoutDirection: =LayoutDirection.Vertical
+                                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                                    LayoutMinHeight: =100
+                                    LayoutMinWidth: =250
+                                    LayoutMode: =LayoutMode.Auto
+                                    RadiusBottomLeft: =4
+                                    RadiusBottomRight: =4
+                                    RadiusTopLeft: =4
+                                    RadiusTopRight: =4
+                                    Width: =Parent.Width*.6
+                                    ZIndex: =2
+
+                                    TextInput3_3 As text:
+                                        BorderColor: =RGBA(3, 91, 108, 1)
+                                        BorderThickness: =2
+                                        Color: =RGBA(0, 0, 0, 1)
+                                        Default: =""
+                                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                        DisabledColor: =RGBA(166, 166, 166, 1)
+                                        DisabledFill: =RGBA(244, 244, 244, 1)
+                                        FocusedBorderThickness: =4
+                                        Height: =Parent.Height
+                                        HoverBorderColor: =RGBA(32, 54, 71, 1)
+                                        HoverColor: =RGBA(0, 0, 0, 1)
+                                        HoverFill: =RGBA(205, 209, 213, 1)
+                                        Reset: =true
+                                        Size: |
+                                            =If(Self.Width>=330,15,If(And(Self.Width<300,Self.Width>270),12,10))
+                                        Width: =Parent.Width*.9
+                                        X: =194
+                                        Y: =310
+                                        ZIndex: =1
+
+                        Container34_10 As groupContainer.horizontalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
+                            Height: =Parent.Height
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            ZIndex: =2
+
+                    Container30_7 As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Center
+                        FillPortions: =0
+                        Height: =Parent.Height*.16
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        Width: =Parent.Width
+                        ZIndex: =6
+
+                        Container34_11 As groupContainer.horizontalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
+                            Height: =Parent.Height
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            ZIndex: =1
+
+                            Button2_3 As button:
+                                BorderColor: =RGBA(3, 91, 108, 1)
+                                Color: =RGBA(3, 91, 108, 1)
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                Fill: =RGBA(255, 255, 255, 1)
+                                FontWeight: =FontWeight.Semibold
+                                HoverColor: =RGBA(255, 255, 255, 1)
+                                HoverFill: =RGBA(3, 91, 108, 1)
+                                OnSelect: =Navigate('Dashboard New Screen')
+                                Size: =If(Self.Width>=170,15,If(And(Self.Width<=170,Self.Width>=150),12,10))
+                                Text: ="Cancel"
+                                Width: =Parent.Width*.3
+                                X: =62
+                                Y: =458
+                                ZIndex: =1
+
+                        Container34_12 As groupContainer.horizontalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
+                            Height: =Parent.Height
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            ZIndex: =2
+
+                            Button7_15 As button:
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                Fill: =RGBA(3, 91, 108, 1)
+                                FontWeight: =FontWeight.Semibold
+                                HoverColor: =RGBA(255, 255, 255, 1)
+                                HoverFill: =RGBA(3, 119, 143, 1)
+                                OnSelect: |
+                                    =Patch(
+                                        RR_Employee_sp,
+                                        Defaults(RR_Employee_sp),
+                                        {
+                                            'First Name': Label22_7.Text,
+                                            Email: Label22_8.Text,
+                                            'Start Date': DatePicker2_6.SelectedDate,
+                                            'End Date': DatePicker2_7.SelectedDate,
+                                            EmployeeID:Label22_3.Text,
+                                            Comments:TextInput3_3.Text,
+                                            Invoice: UploadedImage1_3.Image,
+                                           'Total Amount': Value(TextInput2_16.Text),
+                                            Category: Gallery3_3.Selected.'Expense Category'.Value,
+                                            Manager_Name:Dropdown1_3.Selected.Value   
+                                        }
+                                    );
+                                    //Reset(Label22);
+                                    //Reset(Label22_1);
+                                    Reset(TextInput2_16);
+                                    //Reset(Label22_2);
+                                    Reset(TextInput3_3);
+                                    Reset(DatePicker2_6);
+                                    Reset(DatePicker2_7);
+                                    Reset(AddMediaButton1_3);
+                                    Refresh(RR_Employee_sp);
+                                    Reset(Dropdown1_3);
+                                    Reset(Gallery3_3);
+                                    Navigate('Dashboard New Screen')
+                                Size: =If(Self.Width>=170,15,If(And(Self.Width<=170,Self.Width>=150),12,10))
+                                Text: ="Submit"
+                                Width: =Parent.Width*.3
+                                X: =852
+                                Y: =458
+                                ZIndex: =1
+

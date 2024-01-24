@@ -1,0 +1,308 @@
+"'Total Requests' As screen":
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    OnVisible: =ClearCollect(FilteredData, RR_Employee_sp);
+
+    RecentRequests_2 As groupContainer.manualLayoutContainer:
+        BorderStyle: =BorderStyle.None
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =642
+        Width: =1139
+        X: =227
+        Y: =125
+        ZIndex: =2
+
+        Type_2 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(3, 91, 108, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Verdana
+            FontWeight: =FontWeight.Semibold
+            Size: =13
+            Text: ="Type"
+            Width: =60
+            X: =412
+            Y: =12
+            ZIndex: =3
+
+        Label2_13 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(3, 91, 108, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Verdana
+            FontWeight: =FontWeight.Semibold
+            Size: =13
+            Text: ="Date"
+            Width: =66
+            X: =580
+            Y: =12
+            ZIndex: =4
+
+        Label2_14 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(3, 91, 108, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Verdana
+            FontWeight: =FontWeight.Semibold
+            Size: =13
+            Text: ="Status"
+            Width: =78
+            X: =737
+            Y: =12
+            ZIndex: =5
+
+        Label2_15 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(3, 91, 108, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Verdana
+            FontWeight: =FontWeight.Semibold
+            Size: =13
+            Text: ="Reimburse Amount"
+            Width: =200
+            X: =900
+            Y: =12
+            ZIndex: =6
+
+        Label2_11 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(3, 91, 108, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Verdana
+            FontWeight: =FontWeight.Semibold
+            Size: =13
+            Text: ="Name"
+            Width: =137
+            X: =189
+            Y: =12
+            ZIndex: =7
+
+        Gallery1_2 As gallery.galleryVertical:
+            BorderColor: =RGBA(3, 91, 108, 1)
+            DelayItemLoading: =true
+            Fill: =RGBA(248, 250, 251, 1)
+            Height: =590
+            Items: =FilteredData
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            OnSelect: =true
+            ShowScrollbar: =false
+            TemplateSize: =68
+            Width: =1139
+            Y: =52
+            ZIndex: =8
+
+            Label1_2 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(77, 77, 77, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Segoe UI'
+                Height: =52
+                OnSelect: =Select(Parent)
+                Size: =12
+                Text: =ThisItem.'First Name'
+                Width: =Len(Self.Text)*Self.Size
+                X: =137
+                Y: =8
+                ZIndex: =1
+
+            DatePicker1_2 As datepicker:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+                Color: =RGBA(77, 77, 77, 1)
+                DefaultDate: =ThisItem.'Start Date'
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =DisplayMode.View
+                Font: =Font.'Segoe UI'
+                Height: =38
+                HoverDateFill: =RGBA(205, 209, 213, 1)
+                IconBackground: =RGBA(100, 118, 132, 1)
+                OnSelect: =Select(Parent)
+                SelectedDateFill: =RGBA(100, 118, 132, 1)
+                Size: =12
+                Width: =Len(Self.SelectedDate)*Self.Size
+                X: =553
+                Y: =11
+                ZIndex: =2
+
+            Label7_2 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(77, 77, 77, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Segoe UI'
+                Height: =38
+                OnSelect: =Select(Parent)
+                Size: =12
+                Text: ="Rs."&" "&ThisItem.'Total Amount'&" /-"
+                Width: =Len(Self.Text)*Self.Size
+                X: =925
+                Y: =2
+                ZIndex: =3
+
+            Status_3 As button:
+                Color: |
+                    =If(ThisItem.'Approvel Status'.Value = "Pending",RGBA(255, 153, 0, 1), If(ThisItem.'Approvel Status'.Value = "Accepted", RGBA(0, 172, 79, 1), RGBA(255, 71, 14, 1)))
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =DisplayMode.View
+                Fill: |
+                    =If(ThisItem.'Approvel Status'.Value = "Pending",RGBA(255, 235, 204, 1), If(ThisItem.'Approvel Status'.Value = "Accepted", RGBA(217, 255, 234, 1), RGBA(255, 218, 220, 1)))
+                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                FontWeight: =FontWeight.Semibold
+                Height: =26
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+                OnSelect: =Select(Parent)
+                Size: =12
+                Text: =ThisItem.'Approvel Status'.Value
+                Width: =85
+                X: =733
+                Y: =14
+                ZIndex: =6
+
+            Rectangle1_2 As rectangle:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =3
+                OnSelect: =Select(Parent)
+                Width: =1102
+                Y: =64
+                ZIndex: =7
+
+            Image4_2 As image:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Height: =60
+                Image: |-
+                    =Switch(
+                        ThisItem.Category,"Travel",'Group 9',"Accommodation",'Group 8',"Health Care",'Group 11',"Meal",'Group 10',SampleImage
+                    )
+                OnSelect: =Select(Parent)
+                Width: =60
+                X: =414
+                ZIndex: =9
+
+            Icon1_2 As icon.View:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(3, 91, 108, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =30
+                Icon: =Icon.View
+                OnSelect: |-
+                    =Navigate('Approval Screen', ScreenTransition.Fade);
+                    ClearCollect(Currentdata,Gallery1_2.Selected);
+                    Set(selId,Gallery1_2.Selected.ID)
+                Width: =30
+                X: =71
+                Y: =14
+                ZIndex: =10
+
+        Label2_12 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(3, 91, 108, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Verdana
+            FontWeight: =FontWeight.Semibold
+            Size: =13
+            Text: ="View"
+            Width: =137
+            X: =23
+            Y: =12
+            ZIndex: =9
+
+    RR_NavigationBar_4 As Old_RR_NavBar:
+        CurrentScreen: ="Total Requests"
+        navItem: =If(ManagerView=false,NavManagerView,NavEmployeeView)
+        ZIndex: =8
+
+    Group2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =8
+
+        Button7_1 As button:
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 172, 79, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(217, 255, 234, 1)
+            FontWeight: =FontWeight.Semibold
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            OnSelect: |
+                =ClearCollect(FilteredData, Filter(RR_Employee_sp, 'Approvel Status'.Value = "Accepted"))
+            Size: =15
+            Text: ="Accepted"
+            X: =557
+            Y: =64
+            ZIndex: =4
+
+        Button7_2 As button:
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(255, 71, 14, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(255, 218, 220, 1)
+            FontWeight: =FontWeight.Semibold
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            OnSelect: |
+                =ClearCollect(FilteredData, Filter(RR_Employee_sp, 'Approvel Status'.Value = "Rejected"))
+            Size: =15
+            Text: ="Rejected"
+            X: =844
+            Y: =64
+            ZIndex: =5
+
+        Button7_3 As button:
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(255, 153, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(255, 235, 204, 1)
+            FontWeight: =FontWeight.Semibold
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =//ColorFade(RGBA(100, 118, 132, 1), -20%)
+            OnSelect: |
+                =ClearCollect(FilteredData, Filter(RR_Employee_sp, 'Approvel Status'.Value = "Pending"))
+            Size: =15
+            Text: ="Pending"
+            X: =312
+            Y: =64
+            ZIndex: =6
+
+        Button7_4 As button:
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(2, 105, 184, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(212, 231, 246, 1)
+            FontWeight: =FontWeight.Semibold
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            OnSelect: |
+                =ClearCollect(FilteredData, RR_Employee_sp)
+            Size: =15
+            Text: ="All Data"
+            X: =1118
+            Y: =64
+            ZIndex: =7
+

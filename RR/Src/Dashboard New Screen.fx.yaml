@@ -1,0 +1,2761 @@
+"'Dashboard New Screen' As screen":
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+
+    Container31 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutJustifyContent: =LayoutJustifyContent.Center
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =Parent.Width
+        ZIndex: =1
+
+        Container32 As groupContainer.verticalAutoLayoutContainer:
+            FillPortions: =0
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =Parent.Width*.168
+            ZIndex: =1
+
+            RR_NavigationBar_22 As RR_NavigationBar_20:
+                CurrentScreen: ="Dashboard"
+                Height: =RR_NavigationBar_22.navHeight
+                LayoutMinHeight: =640
+                LayoutMinWidth: =640
+                navItem: =If(ManagerView=false,NavEmployeeView,NavManagerView)
+                Width: =RR_NavigationBar_22.navWidth
+
+        Container33 As groupContainer.verticalAutoLayoutContainer:
+            FillPortions: =0
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =Parent.Width*.834
+            ZIndex: =2
+
+            Container13_5 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
+                FillPortions: =0
+                Height: |-
+                    =//135
+                    Parent.Height*.18
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingBottom: =20
+                PaddingLeft: =20
+                PaddingRight: =20
+                PaddingTop: =20
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =Parent.Width
+                ZIndex: =1
+
+                Container15_3 As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =DropShadow.Semilight
+                    Fill: =RGBA(231, 238, 240, 1)
+                    FillPortions: =0
+                    Height: =Parent.Height*.8
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    ZIndex: =1
+
+                    Image13_5 As image:
+                        BorderColor: =RGBA(32, 54, 71, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Height: =Parent.Height
+                        Image: ='Ellipse 4'
+                        Width: =57
+                        ZIndex: =1
+
+                    Container18_3 As groupContainer.verticalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        Height: =Parent.Height
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        ZIndex: =2
+
+                        Label18_5 As label:
+                            BorderColor: =RGBA(32, 54, 71, 1)
+                            Color: =RGBA(77, 77, 77, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.Verdana
+                            FontWeight: =FontWeight.Semibold
+                            Height: =38
+                            Size: =If(ScreenSize=2,13,If(ScreenSize=3,16,19))
+                            Text: ="Hello! "& User().FullName
+                            Width: =Parent.Width
+                            X: =54
+                            Y: =16
+                            ZIndex: =1
+
+                        Label20_5 As label:
+                            BorderColor: =RGBA(32, 54, 71, 1)
+                            Color: =RGBA(77, 77, 77, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.Verdana
+                            Height: =41
+                            Size: =If(ScreenSize=2,9,If(ScreenSize=3,12,15))
+                            Text: ="We are here to provide you support!!"
+                            Width: =Parent.Width
+                            X: =65
+                            Y: =55
+                            ZIndex: =2
+
+                    Container66 As groupContainer.verticalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Start
+                        FillPortions: =0
+                        Height: =Parent.Height
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        Width: =Parent.Width*.25
+                        ZIndex: =3
+
+                        Container15_8 As groupContainer.horizontalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
+                            Fill: =RGBA(231, 238, 240, 1)
+                            FillPortions: =0
+                            Height: =Parent.Height
+                            LayoutAlignItems: =LayoutAlignItems.Stretch
+                            LayoutDirection: =LayoutDirection.Vertical
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            PaddingLeft: =5
+                            PaddingRight: =5
+                            RadiusBottomLeft: =30
+                            RadiusBottomRight: =30
+                            RadiusTopLeft: =30
+                            RadiusTopRight: =30
+                            Width: =Parent.Width
+                            ZIndex: =1
+
+                            Label10_5 As label:
+                                Align: =Align.Center
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                Color: =RGBA(102, 102, 102, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Height: =Parent.Height*.2
+                                Size: |-
+                                    =//Parent.Width*.35
+                                    //If(And(Parent.Width>=210,Parent.Height>=105),15,12)
+                                    If(Container15_8.Width>=275,15,10)
+                                Text: ="Total Reimbursed Amount"
+                                Width: =Parent.Width
+                                X: =87
+                                Y: =18
+                                ZIndex: =1
+
+                            Container42_4 As groupContainer.verticalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Center
+                                FillPortions: =0
+                                Height: =Parent.Height*.7
+                                LayoutAlignItems: =LayoutAlignItems.Center
+                                LayoutGap: =5
+                                LayoutJustifyContent: =LayoutJustifyContent.Center
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                PaddingLeft: =20
+                                PaddingRight: =20
+                                RadiusBottomLeft: =4
+                                RadiusBottomRight: =4
+                                RadiusTopLeft: =4
+                                RadiusTopRight: =4
+                                Width: =Parent.Width
+                                ZIndex: =2
+
+                                Image3_7 As image:
+                                    BorderColor: =RGBA(32, 54, 71, 1)
+                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                    DisabledFill: =RGBA(244, 244, 244, 1)
+                                    Height: =If(Or(Container15_8.Width>=227,Container15_8.Height>=108),Parent.Width*.25,Parent.Width*.2)-Parent.Height*.2
+                                    Image: =Layer_1
+                                    Width: |-
+                                        =//Parent.Width*.35
+                                        //If(Or(Container15_8.Width>=227,Container15_8.Height>=108),Parent.Width*.35,Parent.Width*.3)-Parent.Height*.2
+                                        If(Or(Container15_8.Width>=227,Container15_8.Height>=108),Parent.Width*.25,Parent.Width*.2)-Parent.Height*.2
+                                    X: =13
+                                    Y: =18
+                                    ZIndex: =1
+
+                                Label14_9 As label:
+                                    BorderColor: =RGBA(32, 54, 71, 1)
+                                    Color: =RGBA(3, 91, 108, 1)
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    Font: =Font.'Segoe UI'
+                                    FontWeight: =FontWeight.Bold
+                                    Height: =Parent.Height*.3
+                                    Size: |-
+                                        =//25
+                                        If(And(Container15_8.Width>=320,Container15_8.Height>=160),25,14)
+                                    Text: |-
+                                        =If(
+                                            ManagerView,
+                                            "Rs. " & Sum(
+                                                Filter(
+                                                    RR_Employee_sp,
+                                                    'Approvel Status'.Value = "Accepted"
+                                                ),
+                                                'Approved Amount') & "/-",
+                                            "Rs. " &  Sum(
+                                                Filter(
+                                                    RR_Employee_sp,
+                                                    'Created By'.Email = User().Email,
+                                                    'Approvel Status'.Value = "Accepted"
+                                                ),
+                                                'Approved Amount'
+                                            )& "/-"
+                                        )
+                                    Width: =Len(Self.Text)*Self.Size
+                                    X: =97
+                                    Y: =77
+                                    ZIndex: =2
+
+                    Image14_5 As image:
+                        BorderColor: =RGBA(32, 54, 71, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Height: =99
+                        Image: ='Ellipse 3'
+                        Width: =236
+                        X: =844
+                        Y: =16
+                        ZIndex: =4
+
+            Container13_6 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
+                FillPortions: =0
+                Height: |-
+                    =//135
+                    Parent.Height*.19
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingBottom: =20
+                PaddingLeft: =20
+                PaddingRight: =20
+                PaddingTop: =20
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =Parent.Width
+                ZIndex: =2
+
+                Container15_4 As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    DropShadow: =DropShadow.Regular
+                    Fill: =RGBA(231, 238, 240, 1)
+                    FillPortions: =0
+                    Height: =Parent.Height*.8
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =10
+                    PaddingRight: =10
+                    RadiusBottomLeft: =30
+                    RadiusBottomRight: =30
+                    RadiusTopLeft: =30
+                    RadiusTopRight: =30
+                    Width: =Parent.Width/4.5
+                    ZIndex: =1
+
+                    Image3_8 As image:
+                        BorderColor: =RGBA(32, 54, 71, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Height: |-
+                            =//Parent.Width*.35
+                            If(And(Parent.Width>=227,Parent.Height>=108),Parent.Width*.35,Parent.Width*.3)-Parent.Height*.1
+                        Image: ='Group 8'
+                        Width: |-
+                            =//Parent.Width*.35
+                            If(And(Parent.Width>=227,Parent.Height>=108),Parent.Width*.35,Parent.Width*.3)-Parent.Height*.1
+                        X: =13
+                        Y: =18
+                        ZIndex: =1
+
+                    Container42 As groupContainer.verticalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Center
+                        FillPortions: =0
+                        Height: =Parent.Height
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        Width: =Parent.Width*.59
+                        ZIndex: =2
+
+                        Label10_6 As label:
+                            Align: =Align.Center
+                            AlignInContainer: =AlignInContainer.Start
+                            BorderColor: =RGBA(32, 54, 71, 1)
+                            Color: =RGBA(102, 102, 102, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =Parent.Height*.3
+                            PaddingLeft: =0
+                            PaddingRight: =25
+                            Size: |-
+                                =//Parent.Width*.35
+                                If(And(Parent.Width>=134,Parent.Height>=108),13,10)
+                            Text: ="Accomodation"
+                            Width: =Parent.Width
+                            X: =87
+                            Y: =18
+                            ZIndex: =1
+
+                        Label14_5 As label:
+                            Align: =Align.Center
+                            BorderColor: =RGBA(32, 54, 71, 1)
+                            Color: =RGBA(3, 91, 108, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
+                            Height: =Parent.Height*.3
+                            Size: |-
+                                =//25
+                                If(And(Parent.Width>=134,Parent.Height>=108),25,18)
+                            Text: =If(ManagerView,CountRows(Filter(RR_Employee_sp,Category="Accommodation")),CountRows(Filter(RR_Employee_sp,Category="Accommodation",'Created By'.Email=User().Email)))
+                            Width: =Parent.Width
+                            X: =113
+                            Y: =58
+                            ZIndex: =2
+
+                Container15_5 As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    DropShadow: =DropShadow.Regular
+                    Fill: =RGBA(231, 238, 240, 1)
+                    FillPortions: =0
+                    Height: =Parent.Height*.8
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =10
+                    PaddingRight: =10
+                    RadiusBottomLeft: =30
+                    RadiusBottomRight: =30
+                    RadiusTopLeft: =30
+                    RadiusTopRight: =30
+                    Width: =Parent.Width/4.5
+                    ZIndex: =2
+
+                    Image3_2 As image:
+                        BorderColor: =RGBA(32, 54, 71, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Height: |-
+                            =//Parent.Width*.35
+                            If(And(Parent.Width>=227,Parent.Height>=108),Parent.Width*.35,Parent.Width*.3)-Parent.Height*.1
+                        Image: ='Group 9'
+                        Width: |-
+                            =//Parent.Width*.35
+                            If(And(Parent.Width>=227,Parent.Height>=108),Parent.Width*.35,Parent.Width*.3)-Parent.Height*.1
+                        X: =13
+                        Y: =18
+                        ZIndex: =1
+
+                    Container42_1 As groupContainer.verticalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Center
+                        FillPortions: =0
+                        Height: =Parent.Height
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        Width: =Parent.Width*.59
+                        ZIndex: =2
+
+                        Label10_2 As label:
+                            Align: =Align.Center
+                            AlignInContainer: =AlignInContainer.Start
+                            BorderColor: =RGBA(32, 54, 71, 1)
+                            Color: =RGBA(102, 102, 102, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =Parent.Height*.2
+                            PaddingLeft: =0
+                            PaddingRight: =25
+                            Size: |-
+                                =//Parent.Width*.35
+                                If(And(Parent.Width>=134,Parent.Height>=108),13,10)
+                            Text: ="Travel"
+                            Width: =Parent.Width
+                            X: =87
+                            Y: =18
+                            ZIndex: =1
+
+                        Label14_6 As label:
+                            Align: =Align.Center
+                            BorderColor: =RGBA(32, 54, 71, 1)
+                            Color: =RGBA(3, 91, 108, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
+                            Height: =Parent.Height*.3
+                            Size: |-
+                                =//25
+                                If(And(Parent.Width>=134,Parent.Height>=108),25,18)
+                            Text: =If(ManagerView,CountRows(Filter(RR_Employee_sp,Category="Travel")),CountRows(Filter(RR_Employee_sp,Category="Travel",'Created By'.Email=User().Email)))
+                            Width: =Parent.Width
+                            X: =113
+                            Y: =58
+                            ZIndex: =2
+
+                Container15_6 As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    DropShadow: =DropShadow.Regular
+                    Fill: =RGBA(231, 238, 240, 1)
+                    FillPortions: =0
+                    Height: =Parent.Height*.8
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =10
+                    PaddingRight: =10
+                    RadiusBottomLeft: =30
+                    RadiusBottomRight: =30
+                    RadiusTopLeft: =30
+                    RadiusTopRight: =30
+                    Width: =Parent.Width/4.5
+                    ZIndex: =3
+
+                    Image3_5 As image:
+                        BorderColor: =RGBA(32, 54, 71, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Height: |-
+                            =//Parent.Width*.35
+                            If(And(Parent.Width>=227,Parent.Height>=108),Parent.Width*.35,Parent.Width*.3)-Parent.Height*.1
+                        Image: ='Group 11'
+                        Width: |-
+                            =//Parent.Width*.35
+                            If(And(Parent.Width>=227,Parent.Height>=108),Parent.Width*.35,Parent.Width*.3)-Parent.Height*.1
+                        X: =13
+                        Y: =18
+                        ZIndex: =1
+
+                    Container42_2 As groupContainer.verticalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Center
+                        FillPortions: =0
+                        Height: =Parent.Height
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        Width: =Parent.Width*.59
+                        ZIndex: =2
+
+                        Label10_3 As label:
+                            Align: =Align.Center
+                            AlignInContainer: =AlignInContainer.Start
+                            BorderColor: =RGBA(32, 54, 71, 1)
+                            Color: =RGBA(102, 102, 102, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =Parent.Height*.2
+                            PaddingRight: =15
+                            Size: |-
+                                =//Parent.Width*.35
+                                If(And(Parent.Width>=134,Parent.Height>=108),13,10)
+                            Text: ="Health Care"
+                            Width: =Parent.Width
+                            X: =87
+                            Y: =18
+                            ZIndex: =1
+
+                        Label14_7 As label:
+                            Align: =Align.Center
+                            BorderColor: =RGBA(32, 54, 71, 1)
+                            Color: =RGBA(3, 91, 108, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
+                            Height: =Parent.Height*.3
+                            Size: |-
+                                =//25
+                                If(And(Parent.Width>=134,Parent.Height>=108),25,18)
+                            Text: =If(ManagerView,CountRows(Filter(RR_Employee_sp,Category="Health Care")),CountRows(Filter(RR_Employee_sp,Category="Health Care",'Created By'.Email=User().Email)))
+                            Width: =Parent.Width
+                            X: =113
+                            Y: =58
+                            ZIndex: =2
+
+                Container15_7 As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    DropShadow: =DropShadow.Regular
+                    Fill: =RGBA(231, 238, 240, 1)
+                    FillPortions: =0
+                    Height: =Parent.Height*.8
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =10
+                    PaddingRight: =10
+                    RadiusBottomLeft: =30
+                    RadiusBottomRight: =30
+                    RadiusTopLeft: =30
+                    RadiusTopRight: =30
+                    Width: =Parent.Width/4.5
+                    ZIndex: =4
+
+                    Image3_6 As image:
+                        BorderColor: =RGBA(32, 54, 71, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Height: |-
+                            =//Parent.Width*.35
+                            If(And(Parent.Width>=227,Parent.Height>=108),Parent.Width*.35,Parent.Width*.3)-Parent.Height*.1
+                        Image: ='Group 10'
+                        Width: |-
+                            =//Parent.Width*.35
+                            If(And(Parent.Width>=227,Parent.Height>=108),Parent.Width*.35,Parent.Width*.3)-Parent.Height*.1
+                        X: =13
+                        Y: =18
+                        ZIndex: =1
+
+                    Container42_3 As groupContainer.verticalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Center
+                        FillPortions: =0
+                        Height: =Parent.Height
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        Width: =Parent.Width*.59
+                        ZIndex: =2
+
+                        Label10_4 As label:
+                            Align: =Align.Center
+                            AlignInContainer: =AlignInContainer.Start
+                            BorderColor: =RGBA(32, 54, 71, 1)
+                            Color: =RGBA(102, 102, 102, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =Parent.Height*.2
+                            PaddingLeft: =0
+                            PaddingRight: =30
+                            Size: |-
+                                =//Parent.Width*.35
+                                If(And(Parent.Width>=134,Parent.Height>=108),13,10)
+                            Text: ="Meal"
+                            Width: =Parent.Width
+                            X: =87
+                            Y: =18
+                            ZIndex: =1
+
+                        Label14_8 As label:
+                            Align: =Align.Center
+                            BorderColor: =RGBA(32, 54, 71, 1)
+                            Color: =RGBA(3, 91, 108, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
+                            Height: =Parent.Height*.3
+                            Size: |-
+                                =//25
+                                If(And(Parent.Width>=134,Parent.Height>=108),25,18)
+                            Text: =If(ManagerView,CountRows(Filter(RR_Employee_sp,Category="Meal")),CountRows(Filter(RR_Employee_sp,Category="Meal",'Created By'.Email=User().Email)))
+                            Width: =Parent.Width
+                            X: =113
+                            Y: =58
+                            ZIndex: =2
+
+            Container61 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
+                FillPortions: =0
+                Height: =Parent.Height-Container13_6.Height-Container13_5.Height
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =Parent.Width
+                ZIndex: =3
+
+                Container62_1 As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Center
+                    FillPortions: =0
+                    Height: =Parent.Height*.1
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    Width: =Parent.Width
+                    ZIndex: =2
+
+                    Label9_1 As label:
+                        BorderColor: =RGBA(32, 54, 71, 1)
+                        Color: =RGBA(3, 91, 108, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =Font.Verdana
+                        FontWeight: =FontWeight.Semibold
+                        Height: =Parent.Height*.8
+                        PaddingLeft: =15
+                        Size: =If(And(Container62_1.Width>=1139,Container62_1.Height>=48),20,14)
+                        Text: ="Reimbursement Details"
+                        Width: =Len(Self.Text)*Self.Size
+                        X: =30
+                        Y: =504
+                        ZIndex: =1
+
+                    Button1_1 As button:
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Fill: =RGBA(3, 91, 108, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =Parent.Height*.8
+                        HoverColor: =RGBA(3, 91, 108, 1)
+                        HoverFill: =ColorFade(RGBA(255, 255,255, 1), 10%)
+                        OnSelect: =Navigate('NewReimburseForm New Screen')
+                        Size: =If(And(Container62_1.Width>=334,Container62_1.Height>=174),15,11)
+                        Text: ="Add Request"
+                        Visible: =If(ManagerView=false,true, false)
+                        Width: =151
+                        X: =381
+                        Y: =504
+                        ZIndex: =2
+
+                    Label15_1 As label:
+                        Align: =Align.Right
+                        BorderColor: =RGBA(32, 54, 71, 1)
+                        Color: =RGBA(3, 91, 108, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Height: =Parent.Height*.8
+                        OnSelect: =If(ManagerView,Navigate('Total Request New Screen'),  Navigate('Request Summary New Screen'))
+                        PaddingRight: =15
+                        Size: =12
+                        Text: ="View All"
+                        Underline: =true
+                        Width: =Parent.Width-Button1_1.Width-Label9_1.Width
+                        X: =945
+                        Y: =504
+                        ZIndex: =3
+
+                Container62_2 As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Center
+                    FillPortions: =0
+                    Height: =Parent.Height-Container62_1.Height
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    Width: =Parent.Width
+                    ZIndex: =3
+
+                    Container45_2 As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Start
+                        FillPortions: =0
+                        Height: =Parent.Height*.2
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutGap: =5
+                        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        PaddingRight: =20
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                        lblNameHeader_2 As label:
+                            Align: =Align.Center
+                            BorderColor: =RGBA(32, 54, 71, 1)
+                            Color: =RGBA(3, 91, 108, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.Verdana
+                            FontWeight: =FontWeight.Semibold
+                            Height: =Parent.Height
+                            PaddingLeft: =30
+                            Size: =13
+                            Text: ="Employee Id"
+                            Width: =Parent.Width*.16
+                            X: =189
+                            Y: =12
+                            ZIndex: =1
+
+                        lblType_2 As label:
+                            Align: =Align.Center
+                            BorderColor: =RGBA(32, 54, 71, 1)
+                            Color: =RGBA(3, 91, 108, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.Verdana
+                            FontWeight: =FontWeight.Semibold
+                            Height: =Parent.Height
+                            PaddingLeft: =75
+                            PaddingRight: =0
+                            Size: =13
+                            Text: ="Type"
+                            Width: =Parent.Width*.169
+                            X: =223
+                            Y: =12
+                            ZIndex: =2
+
+                        lblDateHeader_2 As label:
+                            BorderColor: =RGBA(32, 54, 71, 1)
+                            Color: =RGBA(3, 91, 108, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.Verdana
+                            FontWeight: =FontWeight.Semibold
+                            Height: =Parent.Height
+                            PaddingLeft: =90
+                            Size: =13
+                            Text: ="Date"
+                            Width: =Parent.Width*.169
+                            X: =391
+                            Y: =12
+                            ZIndex: =3
+
+                        lblStatusHeader_2 As label:
+                            Align: =Align.Center
+                            BorderColor: =RGBA(32, 54, 71, 1)
+                            Color: =RGBA(3, 91, 108, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.Verdana
+                            FontWeight: =FontWeight.Semibold
+                            Height: =Parent.Height
+                            PaddingLeft: =30
+                            Size: =13
+                            Text: ="Status"
+                            Width: =Parent.Width*.16
+                            X: =548
+                            Y: =12
+                            ZIndex: =4
+
+                        lblReimburseamount_2 As label:
+                            Align: =Align.Center
+                            BorderColor: =RGBA(32, 54, 71, 1)
+                            Color: =RGBA(3, 91, 108, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.Verdana
+                            FontWeight: =FontWeight.Semibold
+                            Height: =Parent.Height
+                            Size: =13
+                            Text: ="Reimburse Amount"
+                            Width: =Parent.Width*.18
+                            X: =711
+                            Y: =12
+                            ZIndex: =5
+
+                        lblView_2 As label:
+                            Align: =Align.Center
+                            BorderColor: =RGBA(32, 54, 71, 1)
+                            Color: =RGBA(3, 91, 108, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.Verdana
+                            FontWeight: =FontWeight.Semibold
+                            Height: =Parent.Height
+                            Size: =13
+                            Text: ="View"
+                            Width: =Parent.Width*.14
+                            X: =23
+                            Y: =12
+                            ZIndex: =6
+
+                    Container65 As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Center
+                        BorderStyle: =BorderStyle.None
+                        FillPortions: =0
+                        Height: =Parent.Height-Container45_2.Height
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =
+                        LayoutMode: =LayoutMode.Auto
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        Width: =Parent.Width
+                        ZIndex: =2
+
+                        Gallery1_5 As gallery.galleryVertical:
+                            AlignInContainer: =AlignInContainer.Start
+                            BorderColor: =RGBA(3, 91, 108, 1)
+                            BorderStyle: =BorderStyle.None
+                            DelayItemLoading: =true
+                            Fill: =RGBA(248, 250, 251, 1)
+                            FillPortions: =0
+                            Height: =Parent.Height
+                            Items: |
+                                =If(ManagerView,RR_Employee_sp, Filter(RR_Employee_sp, 'Created By'.Email = User().Email))
+                            Layout: =Layout.Vertical
+                            LayoutMinHeight: =287
+                            LayoutMinWidth: =320
+                            LoadingSpinner: =LoadingSpinner.Data
+                            OnSelect: =true
+                            TemplateSize: =68
+                            Transition: =Transition.Pop
+                            Width: =Parent.Width
+                            Y: =62
+                            ZIndex: =1
+
+                            Container47_2 As groupContainer.horizontalAutoLayoutContainer:
+                                Height: =Parent.TemplateHeight
+                                LayoutAlignItems: =LayoutAlignItems.Center
+                                LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                                LayoutMode: =LayoutMode.Auto
+                                RadiusBottomLeft: =4
+                                RadiusBottomRight: =4
+                                RadiusTopLeft: =4
+                                RadiusTopRight: =4
+                                Width: =Parent.TemplateWidth
+                                ZIndex: =11
+
+                                Label1_3 As label:
+                                    Align: =Align.Center
+                                    BorderColor: =RGBA(32, 54, 71, 1)
+                                    Color: =RGBA(77, 77, 77, 1)
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    Font: =Font.'Segoe UI'
+                                    Height: =Parent.Height
+                                    OnSelect: =Select(Gallery1_5)
+                                    Size: =If(Self.Width>=180,15,10)
+                                    Text: =ThisItem.EmployeeID
+                                    Underline: =true
+                                    Width: =Parent.Width*.16
+                                    X: =1
+                                    Y: =6
+                                    ZIndex: =1
+
+                                Image4_3 As image:
+                                    BorderColor: =RGBA(32, 54, 71, 1)
+                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                    DisabledFill: =RGBA(244, 244, 244, 1)
+                                    Height: =Parent.Height-8
+                                    Image: |-
+                                        =Switch(
+                                            ThisItem.Category,"Travel",'Group 9',"Accommodation",'Group 8',"Health Care",'Group 11',"Meal",'Group 10',SampleImage
+                                        )
+                                    OnSelect: =Select(Gallery1_5)
+                                    Width: =Parent.Width*.16
+                                    ZIndex: =2
+
+                                DatePicker1_3 As datepicker:
+                                    BorderColor: =RGBA(32, 54, 71, 1)
+                                    CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+                                    Color: =RGBA(77, 77, 77, 1)
+                                    DefaultDate: =ThisItem.'Start Date'
+                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    DisabledFill: =RGBA(244, 244, 244, 1)
+                                    DisplayMode: =DisplayMode.View
+                                    Fill: =RGBA(0, 0, 0, 0)
+                                    Font: =Font.'Segoe UI'
+                                    Height: =Parent.Height
+                                    HoverDateFill: =RGBA(205, 209, 213, 1)
+                                    IconBackground: =RGBA(100, 118, 132, 1)
+                                    OnSelect: =Select(Gallery1_5)
+                                    PaddingLeft: =35
+                                    SelectedDateFill: =RGBA(100, 118, 132, 1)
+                                    Size: =If(Self.Width>=180,15,10)
+                                    Width: =Parent.Width*.16
+                                    X: =1
+                                    Y: =3
+                                    ZIndex: =3
+
+                                Status_4 As button:
+                                    Color: |
+                                        =If(ThisItem.'Approvel Status'.Value = "Pending",RGBA(255, 153, 0, 1), If(ThisItem.'Approvel Status'.Value = "Accepted", RGBA(0, 172, 79, 1), RGBA(255, 71, 14, 1)))
+                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    DisabledFill: =RGBA(244, 244, 244, 1)
+                                    DisplayMode: =DisplayMode.View
+                                    Fill: |
+                                        =If(ThisItem.'Approvel Status'.Value = "Pending",RGBA(255, 235, 204, 1), If(ThisItem.'Approvel Status'.Value = "Accepted", RGBA(217, 255, 234, 1), RGBA(255, 218, 220, 1)))
+                                    FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                                    FontWeight: =FontWeight.Semibold
+                                    Height: |-
+                                        =//26
+                                        If(Container47_1.Height>=68,Parent.Height*.5,Parent.Height*.3)
+                                    HoverColor: =RGBA(255, 255, 255, 1)
+                                    HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+                                    OnSelect: =Select(Gallery1_5)
+                                    Size: =If(Self.Width>=112,15,10)
+                                    Text: =ThisItem.'Approvel Status'.Value
+                                    Width: =Parent.Width*.1
+                                    Y: =9
+                                    ZIndex: =4
+
+                                Label7_5 As label:
+                                    Align: =Align.Center
+                                    BorderColor: =RGBA(32, 54, 71, 1)
+                                    Color: =RGBA(77, 77, 77, 1)
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    Font: =Font.'Segoe UI'
+                                    Height: =Parent.Height
+                                    OnSelect: =Select(Gallery1_5)
+                                    Size: =If(Self.Width>=180,15,10)
+                                    Text: ="Rs."&" "&ThisItem.'Total Amount'&" /-"
+                                    Width: |
+                                        =Parent.Width*.16
+                                    Y: =9
+                                    ZIndex: =5
+
+                                Icon1_5 As icon.View:
+                                    BorderColor: =RGBA(32, 54, 71, 1)
+                                    Color: =RGBA(3, 91, 108, 1)
+                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                    DisabledColor: =RGBA(244, 244, 244, 1)
+                                    Height: =Parent.Height/3
+                                    Icon: =Icon.View
+                                    OnSelect: |-
+                                        =//If(ManagerView,Navigate('Approval New Screen'),Navigate('Summary New Screen',ScreenTransition.Fade));
+                                        ClearCollect(
+                                            Currentdata,
+                                            Gallery1_5.Selected
+                                        );
+                                        Set(
+                                            VarShowSummary,
+                                            true
+                                        )
+                                    Width: =Parent.Width*.16
+                                    X: =71
+                                    Y: =14
+                                    ZIndex: =6
+
+                            Rectangle1_6 As rectangle:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                Fill: =RGBA(255, 255, 255, 1)
+                                Height: =3
+                                OnSelect: =Select(Gallery1_5)
+                                Width: =Parent.Width-8
+                                X: =Parent.Width/2-Self.Width/2
+                                Y: =Parent.TemplateHeight-Self.Height
+                                ZIndex: =12
+
+    Rectangle3 As rectangle:
+        BorderColor: =
+        BorderStyle: =
+        DisabledFill: =
+        DisplayMode: =DisplayMode.View
+        Fill: =ColorFade(RGBA(0, 0, 0, .5),20%)
+        Height: =Parent.Height
+        HoverFill: =
+        PressedFill: =
+        Visible: =VarShowSummary
+        Width: =Parent.Width
+        ZIndex: =2
+
+    Container67 As groupContainer.horizontalAutoLayoutContainer:
+        DropShadow: =DropShadow.ExtraBold
+        Height: =Parent.Height*.8
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Visible: =VarShowSummary
+        Width: =Parent.Width*.6
+        X: =(Parent.Width-Self.Width)/2
+        Y: =(Parent.Height-Self.Height)/2
+        ZIndex: =3
+
+        Container7_4 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.Start
+            DropShadow: =DropShadow.ExtraBold
+            FillPortions: =0
+            Height: =Parent.Height
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =Parent.Width
+            ZIndex: =2
+
+            Container67_3 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.ExtraBold
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =Parent.Height*.8
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Visible: |-
+                    =
+                    And(VarShowSummary,ManagerView)
+                Width: =Parent.Width*.6
+                X: =(Parent.Width-Self.Width)/2
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =3
+
+                Container69_1 As groupContainer.verticalAutoLayoutContainer:
+                    DropShadow: =DropShadow.Light
+                    Fill: =RGBA(3, 91, 108, 1)
+                    FillPortions: =0
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    Width: =Parent.Width*.3
+                    ZIndex: =1
+
+                    Label8_13 As label:
+                        BorderColor: =RGBA(32, 54, 71, 1)
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisplayMode: =DisplayMode.View
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =Parent.Height*.1
+                        PaddingLeft: =15
+                        Size: =17
+                        Text: |-
+                            =//First(Currentdata).'First Name'
+                            "Reimburse Approval"
+                        Width: =Parent.Width
+                        X: =311
+                        Y: =113
+                        ZIndex: =1
+
+                    Container74_1 As groupContainer.verticalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Center
+                        FillPortions: =0
+                        Height: =Parent.Height*.9
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        Width: =Parent.Width
+                        ZIndex: =2
+
+                        Image10_10 As image:
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            DisplayMode: =DisplayMode.View
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =80
+                            Image: =person
+                            ImagePosition: =ImagePosition.Center
+                            RadiusBottomLeft: =50
+                            RadiusBottomRight: =50
+                            RadiusTopLeft: =50
+                            RadiusTopRight: =50
+                            Width: =80
+                            X: =430
+                            Y: =11
+                            ZIndex: =1
+
+                        Label8_14 As label:
+                            Align: =Align.Center
+                            BorderColor: =RGBA(32, 54, 71, 1)
+                            Color: =RGBA(255, 255, 255, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisplayMode: =DisplayMode.View
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
+                            Height: =Parent.Height*.1
+                            Size: =10
+                            Text: =First(Currentdata).'First Name'
+                            Width: =Parent.Width
+                            X: =311
+                            Y: =113
+                            ZIndex: =2
+
+                        Label17_72 As label:
+                            Align: =Align.Center
+                            BorderColor: =RGBA(32, 54, 71, 1)
+                            Color: =RGBA(255, 255, 255, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
+                            Height: |-
+                                =//Parent.Height*.4
+                                If(Self.Width>=200,Parent.Height*.2,If(And(Self.Width<=180,Self.Width>=170),Parent.Height*.1,Parent.Height*.1))
+                            Size: =If(Self.Width>=190,15,12)
+                            Text: ="Invoice"
+                            Width: =Parent.Width*.5
+                            X: =87
+                            Y: =547
+                            ZIndex: =3
+
+                        Image15_8 As image:
+                            BorderColor: =RGBA(32, 54, 71, 1)
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            Height: =Parent.Height*.6
+                            Image: =First(Currentdata).Invoice
+                            OnSelect: |-
+                                =Set(
+                                    VarShowInvoice,
+                                    true
+                                );
+                                Set(
+                                    VarInvoice,
+                                    Self.Image
+                                )
+                            Width: =Parent.Width*.7
+                            X: =87
+                            Y: =40
+                            ZIndex: =4
+
+                Container71_1 As groupContainer.verticalAutoLayoutContainer:
+                    DropShadow: =DropShadow.Light
+                    Fill: =RGBA(236, 242, 244, 1)
+                    FillPortions: =0
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    Width: =Parent.Width*.7
+                    ZIndex: =2
+
+                    Container73_1 As groupContainer.verticalAutoLayoutContainer:
+                        FillPortions: =0
+                        Height: =Parent.Height*.9
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        ZIndex: =1
+
+                        Container80_2 As groupContainer.horizontalAutoLayoutContainer:
+                            FillPortions: =0
+                            Height: =Parent.Height*.1
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            PaddingRight: =15
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            ZIndex: =1
+
+                            Label8_15 As label:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                Color: =RGBA(3, 91, 108, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisplayMode: =DisplayMode.View
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Bold
+                                Height: =Parent.Height
+                                PaddingLeft: =15
+                                Size: =17
+                                Text: |-
+                                    =//First(Currentdata).'First Name'
+                                    "Reimburse Approval"
+                                Width: =Parent.Width*.8
+                                X: =311
+                                Y: =113
+                                ZIndex: =1
+
+                            Icon3_1 As icon.Cancel:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(244, 244, 244, 1)
+                                Height: =20
+                                Icon: =Icon.Cancel
+                                OnSelect: =Set(VarShowSummary,false)
+                                Width: =20
+                                ZIndex: =2
+
+                        Container81_1 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            FillPortions: =0
+                            Height: =Parent.Height*.1
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutDirection: =LayoutDirection.Vertical
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.Width
+                            ZIndex: =2
+
+                            Label8_16 As label:
+                                Align: =Align.Center
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                Color: =RGBA(3, 91, 108, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisplayMode: =DisplayMode.View
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Bold
+                                Height: =Parent.Height
+                                Size: =15
+                                Text: =First(Currentdata).'First Name'
+                                Visible: =false
+                                Width: =Parent.Width
+                                X: =311
+                                Y: =113
+                                ZIndex: =1
+
+                        Container35_33 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            FillPortions: =0
+                            Height: =Parent.Height*.1
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutGap: =2
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.Width
+                            ZIndex: =3
+
+                            Image2_8 As image:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                Height: =Parent.Width*.04
+                                Image: =EMAIL
+                                Width: |-
+                                    =//20
+                                    Parent.Width*.04
+                                ZIndex: =1
+
+                            Label17_73 As label:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                Color: =RGBA(3, 91, 108, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Bold
+                                Height: =Parent.Height
+                                PaddingBottom: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Size: =If(Self.Width>=210,15,13)
+                                Text: ="Email"
+                                Width: =Parent.Width*.36
+                                X: =97
+                                Y: =192
+                                ZIndex: =2
+
+                            TextInput2_64 As text:
+                                BorderColor: =RGBA(3, 91, 108, 1)
+                                BorderThickness: =2
+                                Color: =RGBA(77, 77, 77, 1)
+                                Default: =First(Currentdata).Email
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                DisplayMode: =DisplayMode.View
+                                Fill: =RGBA(0, 0, 0, 0)
+                                FocusedBorderThickness: =4
+                                Font: =Font.'Segoe UI'
+                                Height: =If(Self.Width>=540,Parent.Height*.45,Parent.Height*.35)
+                                HoverBorderColor: =RGBA(32, 54, 71, 1)
+                                HoverColor: =RGBA(0, 0, 0, 1)
+                                HoverFill: =RGBA(205, 209, 213, 1)
+                                RadiusBottomLeft: =30
+                                RadiusBottomRight: =30
+                                RadiusTopLeft: =30
+                                RadiusTopRight: =30
+                                Size: =If(Self.Width>=325,13,10)
+                                Width: =Parent.Width*.6-Image2_8.Width
+                                X: =93
+                                Y: =235
+                                ZIndex: =3
+
+                        Container35_34 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            FillPortions: =0
+                            Height: =Parent.Height*.1
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutGap: =2
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.Width
+                            ZIndex: =4
+
+                            Image2_9 As image:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                Height: =Parent.Width*.05
+                                Image: =ammount
+                                Width: =Parent.Width*.05
+                                ZIndex: =1
+
+                            Label17_74 As label:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                Color: =RGBA(3, 91, 108, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Bold
+                                Height: =If(Self.Width>=200,Parent.Height*.4,Parent.Height*.35)
+                                PaddingBottom: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Size: =If(Self.Width>=210,15,13)
+                                Text: ="Total Amount"
+                                Width: =Parent.Width*.36
+                                X: =686
+                                Y: =194
+                                ZIndex: =2
+
+                            TextInput2_65 As text:
+                                BorderColor: =RGBA(3, 91, 108, 1)
+                                BorderThickness: =7
+                                Color: =RGBA(77, 77, 77, 1)
+                                Default: ="Rs. "&First(Currentdata).'Total Amount'&" /-"
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                DisplayMode: =DisplayMode.View
+                                Fill: =RGBA(0, 0, 0, 0)
+                                FocusedBorderThickness: =4
+                                Font: =Font.'Segoe UI'
+                                Height: =If(Self.Width>=540,Parent.Height*.45,Parent.Height*.35)
+                                HoverBorderColor: =RGBA(32, 54, 71, 1)
+                                HoverColor: =RGBA(0, 0, 0, 1)
+                                HoverFill: =RGBA(205, 209, 213, 1)
+                                RadiusBottomLeft: =30
+                                RadiusBottomRight: =30
+                                RadiusTopLeft: =30
+                                RadiusTopRight: =30
+                                Size: =If(Self.Width>=325,13,10)
+                                Width: =Parent.Width*.6-Image2_8.Width
+                                X: =686
+                                Y: =38
+                                ZIndex: =3
+
+                        Container35_35 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            FillPortions: =0
+                            Height: =Parent.Height*.1
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutGap: =2
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.Width
+                            ZIndex: =5
+
+                            Image2_10 As image:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                Height: =Parent.Width*.035
+                                Image: =calander
+                                Width: =Parent.Width*.035
+                                ZIndex: =1
+
+                            Label17_75 As label:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                Color: =RGBA(3, 91, 108, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Bold
+                                Height: =If(Self.Width>=200,Parent.Height*.4,Parent.Height*.35)
+                                PaddingBottom: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Size: =If(Self.Width>=210,15,13)
+                                Text: ="Start Date"
+                                Width: =Parent.Width*.36
+                                X: =93
+                                Y: =295
+                                ZIndex: =2
+
+                            TextInput2_66 As text:
+                                BorderColor: =RGBA(3, 91, 108, 1)
+                                BorderThickness: =2
+                                Color: =RGBA(77, 77, 77, 1)
+                                Default: =First(Currentdata).'Start Date'
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                DisplayMode: =DisplayMode.View
+                                Fill: =RGBA(0, 0, 0, 0)
+                                FocusedBorderThickness: =4
+                                Font: =Font.'Segoe UI'
+                                Height: =If(Self.Width>=540,Parent.Height*.45,Parent.Height*.35)
+                                HoverBorderColor: =RGBA(32, 54, 71, 1)
+                                HoverColor: =RGBA(0, 0, 0, 1)
+                                HoverFill: =RGBA(205, 209, 213, 1)
+                                RadiusBottomLeft: =30
+                                RadiusBottomRight: =30
+                                RadiusTopLeft: =30
+                                RadiusTopRight: =30
+                                Size: =If(Self.Width>=325,13,10)
+                                Width: =Parent.Width*.6-Image2_8.Width
+                                X: =4
+                                Y: =40
+                                ZIndex: =3
+
+                        Container35_36 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            FillPortions: =0
+                            Height: =Parent.Height*.1
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutGap: =2
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.Width
+                            ZIndex: =6
+
+                            Image2_11 As image:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                Height: =Parent.Width*.035
+                                Image: =calander
+                                Width: =Parent.Width*.035
+                                ZIndex: =1
+
+                            Label17_76 As label:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                Color: =RGBA(3, 91, 108, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Bold
+                                Height: =If(Self.Width>=200,Parent.Height*.4,Parent.Height*.35)
+                                PaddingBottom: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Size: =If(Self.Width>=210,15,13)
+                                Text: ="End Date"
+                                Width: =Parent.Width*.36
+                                X: =3
+                                Y: =288
+                                ZIndex: =2
+
+                            TextInput2_67 As text:
+                                BorderColor: =RGBA(3, 91, 108, 1)
+                                BorderThickness: =2
+                                Color: =RGBA(77, 77, 77, 1)
+                                Default: =First(Currentdata).'End Date'
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                DisplayMode: =DisplayMode.View
+                                Fill: =RGBA(0, 0, 0, 0)
+                                FocusedBorderThickness: =4
+                                Height: =If(Self.Width>=540,Parent.Height*.45,Parent.Height*.35)
+                                HoverBorderColor: =RGBA(32, 54, 71, 1)
+                                HoverColor: =RGBA(0, 0, 0, 1)
+                                HoverFill: =RGBA(205, 209, 213, 1)
+                                RadiusBottomLeft: =30
+                                RadiusBottomRight: =30
+                                RadiusTopLeft: =30
+                                RadiusTopRight: =30
+                                Size: =If(Self.Width>=325,13,10)
+                                Width: =Parent.Width*.6-Image2_8.Width
+                                X: =689
+                                Y: =40
+                                ZIndex: =3
+
+                        Container35_37 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            FillPortions: =0
+                            Height: =Parent.Height*.1
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutGap: =2
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.Width
+                            ZIndex: =7
+
+                            Image2_12 As image:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                Height: =Parent.Width*.04
+                                Image: =CATAGORY
+                                Width: =Parent.Width*.04
+                                ZIndex: =1
+
+                            Label17_77 As label:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                Color: =RGBA(3, 91, 108, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Bold
+                                Height: =If(Self.Width>=200,Parent.Height*.4,Parent.Height*.35)
+                                PaddingBottom: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Size: =If(Self.Width>=210,15,13)
+                                Text: ="Category"
+                                Width: =Parent.Width*.36
+                                X: =97
+                                Y: =400
+                                ZIndex: =2
+
+                            TextInput2_68 As text:
+                                BorderColor: =RGBA(3, 91, 108, 1)
+                                BorderThickness: =2
+                                Color: =RGBA(77, 77, 77, 1)
+                                Default: =First(Currentdata).Category
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                DisplayMode: =DisplayMode.View
+                                Fill: =RGBA(0, 0, 0, 0)
+                                FocusedBorderThickness: =4
+                                Font: =Font.'Segoe UI'
+                                Height: =If(Self.Width>=540,Parent.Height*.45,Parent.Height*.35)
+                                HoverBorderColor: =RGBA(32, 54, 71, 1)
+                                HoverColor: =RGBA(0, 0, 0, 1)
+                                HoverFill: =RGBA(205, 209, 213, 1)
+                                RadiusBottomLeft: =30
+                                RadiusBottomRight: =30
+                                RadiusTopLeft: =30
+                                RadiusTopRight: =30
+                                Size: =If(Self.Width>=325,13,10)
+                                Width: =Parent.Width*.6-Image2_8.Width
+                                X: =97
+                                Y: =40
+                                ZIndex: =3
+
+                        Container35_38 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            FillPortions: =0
+                            Height: =Parent.Height*.1
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutGap: =2
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.Width
+                            ZIndex: =8
+
+                            Image2_13 As image:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                Height: =Parent.Width*.04
+                                Image: =manager
+                                Width: =Parent.Width*.04
+                                ZIndex: =1
+
+                            Label17_78 As label:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                Color: =RGBA(3, 91, 108, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Bold
+                                Height: =If(Self.Width>=200,Parent.Height*.4,Parent.Height*.35)
+                                PaddingBottom: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Size: =If(Self.Width>=210,15,13)
+                                Text: ="Manager Name"
+                                Width: =Parent.Width*.36
+                                X: =5
+                                Y: =390
+                                ZIndex: =2
+
+                            TextInput2_69 As text:
+                                BorderColor: =RGBA(3, 91, 108, 1)
+                                BorderThickness: =2
+                                Color: =RGBA(77, 77, 77, 1)
+                                Default: =First(Currentdata).Manager_Name
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                DisplayMode: =DisplayMode.View
+                                Fill: =RGBA(0, 0, 0, 0)
+                                FocusedBorderThickness: =4
+                                Font: =Font.'Segoe UI'
+                                Height: =If(Self.Width>=540,Parent.Height*.45,Parent.Height*.35)
+                                HoverBorderColor: =RGBA(32, 54, 71, 1)
+                                HoverColor: =RGBA(0, 0, 0, 1)
+                                HoverFill: =RGBA(205, 209, 213, 1)
+                                RadiusBottomLeft: =30
+                                RadiusBottomRight: =30
+                                RadiusTopLeft: =30
+                                RadiusTopRight: =30
+                                Size: =If(Self.Width>=325,13,10)
+                                Width: =Parent.Width*.6-Image2_8.Width
+                                X: =692
+                                Y: =50
+                                ZIndex: =3
+
+                        Container35_39 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            FillPortions: =0
+                            Height: =Parent.Height*.1
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutGap: =2
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.Width
+                            ZIndex: =9
+
+                            Image2_14 As image:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                Height: =Parent.Width*.05
+                                Image: =ammount
+                                Visible: =If(First(Currentdata).'Approvel Status'.Value="Pending",true,false)
+                                Width: =Parent.Width*.05
+                                ZIndex: =1
+
+                            Label17_20 As label:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                Color: =RGBA(3, 91, 108, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisplayMode: =DisplayMode.View
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Bold
+                                Height: =If(Self.Width>=200,Parent.Height*.4,If(And(Self.Width<=180,Self.Width>=170),Parent.Height*.3,Parent.Height*.2))
+                                Size: =If(Self.Width>=210,15,13)
+                                Text: ="Approve Amount"
+                                Visible: =If(First(Currentdata).'Approvel Status'.Value="Pending",true,false)
+                                Width: =Parent.Width*.36
+                                X: =97
+                                Y: =423
+                                ZIndex: =2
+
+                            TextInput2_40 As text:
+                                BorderColor: =RGBA(3, 91, 108, 1)
+                                BorderThickness: =0
+                                Color: =RGBA(77, 77, 77, 1)
+                                Default: =""
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                Fill: =RGBA(0, 0, 0, 0)
+                                FocusedBorderThickness: =4
+                                Font: =Font.'Segoe UI'
+                                Format: =TextFormat.Number
+                                Height: =If(Self.Width>=540,Parent.Height*.45,Parent.Height*.35)
+                                HintText: ="Enter the Amount to be Approved"
+                                HoverBorderColor: =RGBA(32, 54, 71, 1)
+                                HoverColor: =RGBA(0, 0, 0, 1)
+                                HoverFill: =RGBA(205, 209, 213, 1)
+                                OnChange: =Set(ApprovedAmt,Value(TextInput2_40.Text))
+                                OnSelect: =
+                                RadiusBottomLeft: =30
+                                RadiusBottomRight: =30
+                                RadiusTopLeft: =30
+                                RadiusTopRight: =30
+                                Reset: =true
+                                Size: =If(Self.Width>=325,13,10)
+                                Tooltip: ="Enter Amount to Approve"
+                                Visible: =If(First(Currentdata).'Approvel Status'.Value="Pending",true,false)
+                                Width: =Parent.Width*.6-Image2_8.Width
+                                X: =97
+                                Y: =38
+                                ZIndex: =3
+
+                        Container35_40 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            FillPortions: =0
+                            Height: =Parent.Height*.1
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutGap: =10
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.Width
+                            ZIndex: =10
+
+                    Container80_3 As groupContainer.horizontalAutoLayoutContainer:
+                        FillPortions: =0
+                        Height: =Parent.Height*.1
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutGap: =10
+                        LayoutJustifyContent: =LayoutJustifyContent.End
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        PaddingRight: =10
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        Visible: =If(First(Currentdata).'Approvel Status'.Value="Pending",true,false)
+                        ZIndex: =2
+
+                        Button7_23 As button:
+                            BorderStyle: =BorderStyle.None
+                            Color: =RGBA(255, 71, 14, 1)
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            Fill: =RGBA(255, 218, 220, 1)
+                            FontWeight: =FontWeight.Semibold
+                            Height: =35
+                            HoverColor: =RGBA(255, 255, 255, 1)
+                            HoverFill: =RGBA(250, 7, 7, 0.5)
+                            OnSelect: |+
+                                =Patch(
+                                    RR_Employee_sp,
+                                    {
+                                        ID: First(Currentdata).ID,
+                                        'Approvel Status': {Value: "Rejected"}
+                                    }
+                                );
+                                Set(
+                                    Status1,
+                                    "Rejected"
+                                );
+                                ReimburseApproveMail.Run(
+                                    TextInput2_64.Text,
+                                    Status1,
+                                    First(Currentdata).'Total Amount',
+                                    ApprovedAmt,
+                                    First(Currentdata).'Rejected Amount',
+                                    First(Currentdata).Manager_Name
+                                );
+                                Reset(TextInput2_40);
+                                Refresh(RR_Employee_sp);
+                                Navigate('Dashboard New Screen')
+                                
+                            PressedFill: =RGBA(168, 0, 0, 1)
+                            Size: =12
+                            Text: ="Reject"
+                            Tooltip: ="Reject Employee's Request"
+                            Width: =Parent.Width*.15
+                            X: =38
+                            Y: =20
+                            ZIndex: =1
+
+                        Button7_24 As button:
+                            BorderStyle: =BorderStyle.None
+                            Color: =RGBA(217, 255, 234, 1)
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            Fill: =RGBA(0, 172, 79, 1)
+                            FontWeight: =FontWeight.Bold
+                            Height: =35
+                            HoverColor: =RGBA(15, 99, 0, 1)
+                            HoverFill: =RGBA(130, 222, 126, 1)
+                            OnSelect: |
+                                =If(ApprovedAmt>0,
+                                Patch(
+                                    RR_Employee_sp,
+                                    {
+                                        ID:First(Currentdata).ID,
+                                        'Approvel Status': {Value: "Accepted"},
+                                        'Total Amount': First(Currentdata).'Total Amount',
+                                        'Approved Amount': ApprovedAmt
+                                    }
+                                ),
+                                Patch(
+                                    RR_Employee_sp,
+                                    {
+                                        ID:First(Currentdata).ID,
+                                        'Approvel Status': {Value: "Accepted"}
+                                    }
+                                ));
+                                ReimburseApproveMail.Run(
+                                    TextInput2_64.Text,
+                                    "Accepted",
+                                    First(Currentdata).'Total Amount',
+                                    ApprovedAmt,
+                                    First(Currentdata).'Total Amount'-ApprovedAmt,
+                                    First(Currentdata).Manager_Name
+                                );
+                                Reset(TextInput2_40);
+                                Refresh(RR_Employee_sp);
+                                Navigate('Dashboard New Screen')
+                            Size: =12
+                            Text: ="Accept"
+                            Width: =Parent.Width*.15
+                            X: =562
+                            Y: =20
+                            ZIndex: =2
+
+            Container67_7 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.ExtraBold
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =Parent.Height*.8
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Visible: |-
+                    =//VarShowSummary
+                    If(And(ManagerView=false,VarShowSummary),true,false)
+                Width: =Parent.Width*.6
+                X: =(Parent.Width-Self.Width)/2
+                Y: =(Parent.Height-Self.Height)/2
+                ZIndex: =4
+
+                Container69_4 As groupContainer.verticalAutoLayoutContainer:
+                    DropShadow: =DropShadow.Light
+                    Fill: =RGBA(3, 91, 108, 1)
+                    FillPortions: =0
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    Width: =Parent.Width*.3
+                    ZIndex: =1
+
+                    Label8_24 As label:
+                        BorderColor: =RGBA(32, 54, 71, 1)
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisplayMode: =DisplayMode.View
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =Parent.Height*.1
+                        PaddingLeft: =15
+                        Size: =17
+                        Text: |-
+                            =//First(Currentdata).'First Name'
+                            "Reimburse Approval"
+                        Width: =Parent.Width
+                        X: =311
+                        Y: =113
+                        ZIndex: =1
+
+                    Container74_4 As groupContainer.verticalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Center
+                        FillPortions: =0
+                        Height: =Parent.Height*.9
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        Width: =Parent.Width
+                        ZIndex: =2
+
+                        Image10_14 As image:
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            DisplayMode: =DisplayMode.View
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =80
+                            Image: =person
+                            ImagePosition: =ImagePosition.Center
+                            RadiusBottomLeft: =50
+                            RadiusBottomRight: =50
+                            RadiusTopLeft: =50
+                            RadiusTopRight: =50
+                            Width: =80
+                            X: =430
+                            Y: =11
+                            ZIndex: =1
+
+                        Label8_25 As label:
+                            Align: =Align.Center
+                            BorderColor: =RGBA(32, 54, 71, 1)
+                            Color: =RGBA(255, 255, 255, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisplayMode: =DisplayMode.View
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
+                            Height: =Parent.Height*.1
+                            Size: =10
+                            Text: =First(Currentdata).'First Name'
+                            Width: =Parent.Width
+                            X: =311
+                            Y: =113
+                            ZIndex: =2
+
+                        Label17_107 As label:
+                            Align: =Align.Center
+                            BorderColor: =RGBA(32, 54, 71, 1)
+                            Color: =RGBA(255, 255, 255, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
+                            Height: |-
+                                =//Parent.Height*.4
+                                If(Self.Width>=200,Parent.Height*.2,If(And(Self.Width<=180,Self.Width>=170),Parent.Height*.1,Parent.Height*.1))
+                            Size: =If(Self.Width>=190,15,12)
+                            Text: ="Invoice"
+                            Width: =Parent.Width*.5
+                            X: =87
+                            Y: =547
+                            ZIndex: =3
+
+                        Image15_13 As image:
+                            BorderColor: =RGBA(32, 54, 71, 1)
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            Height: =Parent.Height*.6
+                            Image: =First(Currentdata).Invoice
+                            OnSelect: |-
+                                =Set(
+                                    VarShowInvoice,
+                                    true
+                                );
+                                Set(
+                                    VarInvoice,
+                                    Self.Image
+                                )
+                            Width: =Parent.Width*.7
+                            X: =87
+                            Y: =40
+                            ZIndex: =4
+
+                Container71_4 As groupContainer.verticalAutoLayoutContainer:
+                    DropShadow: =DropShadow.Light
+                    Fill: =RGBA(236, 242, 244, 1)
+                    FillPortions: =0
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =4
+                    RadiusBottomRight: =4
+                    RadiusTopLeft: =4
+                    RadiusTopRight: =4
+                    Width: =Parent.Width*.7
+                    ZIndex: =2
+
+                    Container73_4 As groupContainer.verticalAutoLayoutContainer:
+                        FillPortions: =0
+                        Height: =Parent.Height*.9
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        ZIndex: =1
+
+                        Container80_8 As groupContainer.horizontalAutoLayoutContainer:
+                            FillPortions: =0
+                            Height: =Parent.Height*.1
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            PaddingRight: =15
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            ZIndex: =1
+
+                            Label8_26 As label:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                Color: =RGBA(3, 91, 108, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisplayMode: =DisplayMode.View
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Bold
+                                Height: =Parent.Height
+                                PaddingLeft: =15
+                                Size: =17
+                                Text: |-
+                                    =//First(Currentdata).'First Name'
+                                    "Reimburse Approval"
+                                Width: =Parent.Width*.8
+                                X: =311
+                                Y: =113
+                                ZIndex: =1
+
+                            Icon3_7 As icon.Cancel:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(244, 244, 244, 1)
+                                Height: =20
+                                Icon: =Icon.Cancel
+                                OnSelect: =Set(VarShowSummary,false)
+                                Width: =20
+                                ZIndex: =2
+
+                        Container81_4 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            FillPortions: =0
+                            Height: =Parent.Height*.1
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.Width
+                            ZIndex: =2
+
+                            Image2_31 As image:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                Height: =Parent.Width*.04
+                                Image: =EMAIL
+                                Width: |-
+                                    =//20
+                                    Parent.Width*.04
+                                ZIndex: =1
+
+                            Label17_109 As label:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                Color: =RGBA(3, 91, 108, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Bold
+                                Height: =Parent.Height
+                                PaddingBottom: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Size: =If(Self.Width>=210,15,13)
+                                Text: ="Status"
+                                Width: =Parent.Width*.36
+                                X: =97
+                                Y: =192
+                                ZIndex: =2
+
+                            Container62_3 As groupContainer.horizontalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.Center
+                                FillPortions: =0
+                                Height: =If(Self.Width>=540,Parent.Height*.45,Parent.Height*.35)
+                                LayoutAlignItems: =LayoutAlignItems.Center
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
+                                LayoutMode: =LayoutMode.Auto
+                                PaddingLeft: =15
+                                RadiusBottomLeft: =4
+                                RadiusBottomRight: =4
+                                RadiusTopLeft: =4
+                                RadiusTopRight: =4
+                                Width: =Parent.Width*.6-Image2_31.Width
+                                ZIndex: =4
+
+                                Status_12 As button:
+                                    Color: |
+                                        =If(First(Currentdata).'Approvel Status'.Value = "Pending",RGBA(255, 153, 0, 1), If(First(Currentdata).'Approvel Status'.Value = "Accepted", RGBA(217, 255, 234, 1), RGBA(255, 71, 14, 1)))
+                                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                    DisabledColor: =RGBA(166, 166, 166, 1)
+                                    DisabledFill: =RGBA(244, 244, 244, 1)
+                                    DisplayMode: =DisplayMode.View
+                                    Fill: |
+                                        =If(First(Currentdata).'Approvel Status'.Value= "Pending",RGBA(255, 235, 204, 1), If(First(Currentdata).'Approvel Status'.Value = "Accepted",  RGBA(0, 172, 79, 1), RGBA(255, 218, 220, 1)))
+                                    FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                                    FontWeight: =FontWeight.Semibold
+                                    Height: =Parent.Height
+                                    HoverColor: =RGBA(255, 255, 255, 1)
+                                    HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+                                    Size: =8
+                                    Text: =First(Currentdata).'Approvel Status'.Value
+                                    Width: =Parent.Width*.2
+                                    X: =646
+                                    Y: =603
+                                    ZIndex: =1
+
+                        Container35_57 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            FillPortions: =0
+                            Height: =Parent.Height*.1
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutGap: =2
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.Width
+                            ZIndex: =3
+
+                            Image2_32 As image:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                Height: =Parent.Width*.04
+                                Image: =EMAIL
+                                Width: |-
+                                    =//20
+                                    Parent.Width*.04
+                                ZIndex: =1
+
+                            Label17_110 As label:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                Color: =RGBA(3, 91, 108, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Bold
+                                Height: =Parent.Height
+                                PaddingBottom: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Size: =If(Self.Width>=210,15,13)
+                                Text: ="Email"
+                                Width: =Parent.Width*.36
+                                X: =97
+                                Y: =192
+                                ZIndex: =2
+
+                            TextInput2_91 As text:
+                                BorderColor: =RGBA(3, 91, 108, 1)
+                                BorderThickness: =2
+                                Color: =RGBA(77, 77, 77, 1)
+                                Default: =First(Currentdata).Email
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                DisplayMode: =DisplayMode.View
+                                Fill: =RGBA(0, 0, 0, 0)
+                                FocusedBorderThickness: =4
+                                Font: =Font.'Segoe UI'
+                                Height: =If(Self.Width>=540,Parent.Height*.45,Parent.Height*.35)
+                                HoverBorderColor: =RGBA(32, 54, 71, 1)
+                                HoverColor: =RGBA(0, 0, 0, 1)
+                                HoverFill: =RGBA(205, 209, 213, 1)
+                                RadiusBottomLeft: =30
+                                RadiusBottomRight: =30
+                                RadiusTopLeft: =30
+                                RadiusTopRight: =30
+                                Size: =If(Self.Width>=325,13,10)
+                                Width: =Parent.Width*.6-Image2_32.Width
+                                X: =93
+                                Y: =235
+                                ZIndex: =3
+
+                        Container35_58 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            FillPortions: =0
+                            Height: =Parent.Height*.1
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutGap: =2
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.Width
+                            ZIndex: =4
+
+                            Image2_33 As image:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                Height: =Parent.Width*.05
+                                Image: =ammount
+                                Width: =Parent.Width*.05
+                                ZIndex: =1
+
+                            Label17_111 As label:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                Color: =RGBA(3, 91, 108, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Bold
+                                Height: =If(Self.Width>=200,Parent.Height*.4,Parent.Height*.35)
+                                PaddingBottom: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Size: =If(Self.Width>=210,15,13)
+                                Text: ="Total Amount"
+                                Width: =Parent.Width*.36
+                                X: =686
+                                Y: =194
+                                ZIndex: =2
+
+                            TextInput2_93 As text:
+                                BorderColor: =RGBA(3, 91, 108, 1)
+                                BorderThickness: =7
+                                Color: =RGBA(77, 77, 77, 1)
+                                Default: ="Rs. "&First(Currentdata).'Total Amount'&" /-"
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                DisplayMode: =DisplayMode.View
+                                Fill: =RGBA(0, 0, 0, 0)
+                                FocusedBorderThickness: =4
+                                Font: =Font.'Segoe UI'
+                                Height: =If(Self.Width>=540,Parent.Height*.45,Parent.Height*.35)
+                                HoverBorderColor: =RGBA(32, 54, 71, 1)
+                                HoverColor: =RGBA(0, 0, 0, 1)
+                                HoverFill: =RGBA(205, 209, 213, 1)
+                                RadiusBottomLeft: =30
+                                RadiusBottomRight: =30
+                                RadiusTopLeft: =30
+                                RadiusTopRight: =30
+                                Size: =If(Self.Width>=325,13,10)
+                                Width: =Parent.Width*.6-Image2_32.Width
+                                X: =686
+                                Y: =38
+                                ZIndex: =3
+
+                        Container35_59 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            FillPortions: =0
+                            Height: =Parent.Height*.1
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutGap: =2
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.Width
+                            ZIndex: =5
+
+                            Image2_34 As image:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                Height: =Parent.Width*.035
+                                Image: =calander
+                                Width: =Parent.Width*.035
+                                ZIndex: =1
+
+                            Label17_112 As label:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                Color: =RGBA(3, 91, 108, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Bold
+                                Height: =If(Self.Width>=200,Parent.Height*.4,Parent.Height*.35)
+                                PaddingBottom: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Size: =If(Self.Width>=210,15,13)
+                                Text: ="Start Date"
+                                Width: =Parent.Width*.36
+                                X: =93
+                                Y: =295
+                                ZIndex: =2
+
+                            TextInput2_94 As text:
+                                BorderColor: =RGBA(3, 91, 108, 1)
+                                BorderThickness: =2
+                                Color: =RGBA(77, 77, 77, 1)
+                                Default: =First(Currentdata).'Start Date'
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                DisplayMode: =DisplayMode.View
+                                Fill: =RGBA(0, 0, 0, 0)
+                                FocusedBorderThickness: =4
+                                Font: =Font.'Segoe UI'
+                                Height: =If(Self.Width>=540,Parent.Height*.45,Parent.Height*.35)
+                                HoverBorderColor: =RGBA(32, 54, 71, 1)
+                                HoverColor: =RGBA(0, 0, 0, 1)
+                                HoverFill: =RGBA(205, 209, 213, 1)
+                                RadiusBottomLeft: =30
+                                RadiusBottomRight: =30
+                                RadiusTopLeft: =30
+                                RadiusTopRight: =30
+                                Size: =If(Self.Width>=325,13,10)
+                                Width: =Parent.Width*.6-Image2_32.Width
+                                X: =4
+                                Y: =40
+                                ZIndex: =3
+
+                        Container35_60 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            FillPortions: =0
+                            Height: =Parent.Height*.1
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutGap: =2
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.Width
+                            ZIndex: =6
+
+                            Image2_35 As image:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                Height: =Parent.Width*.035
+                                Image: =calander
+                                Width: =Parent.Width*.035
+                                ZIndex: =1
+
+                            Label17_113 As label:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                Color: =RGBA(3, 91, 108, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Bold
+                                Height: =If(Self.Width>=200,Parent.Height*.4,Parent.Height*.35)
+                                PaddingBottom: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Size: =If(Self.Width>=210,15,13)
+                                Text: ="End Date"
+                                Width: =Parent.Width*.36
+                                X: =3
+                                Y: =288
+                                ZIndex: =2
+
+                            TextInput2_95 As text:
+                                BorderColor: =RGBA(3, 91, 108, 1)
+                                BorderThickness: =2
+                                Color: =RGBA(77, 77, 77, 1)
+                                Default: =First(Currentdata).'End Date'
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                DisplayMode: =DisplayMode.View
+                                Fill: =RGBA(0, 0, 0, 0)
+                                FocusedBorderThickness: =4
+                                Height: =If(Self.Width>=540,Parent.Height*.45,Parent.Height*.35)
+                                HoverBorderColor: =RGBA(32, 54, 71, 1)
+                                HoverColor: =RGBA(0, 0, 0, 1)
+                                HoverFill: =RGBA(205, 209, 213, 1)
+                                RadiusBottomLeft: =30
+                                RadiusBottomRight: =30
+                                RadiusTopLeft: =30
+                                RadiusTopRight: =30
+                                Size: =If(Self.Width>=325,13,10)
+                                Width: =Parent.Width*.6-Image2_32.Width
+                                X: =689
+                                Y: =40
+                                ZIndex: =3
+
+                        Container35_61 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            FillPortions: =0
+                            Height: =Parent.Height*.1
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutGap: =2
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.Width
+                            ZIndex: =7
+
+                            Image2_36 As image:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                Height: =Parent.Width*.04
+                                Image: =CATAGORY
+                                Width: =Parent.Width*.04
+                                ZIndex: =1
+
+                            Label17_114 As label:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                Color: =RGBA(3, 91, 108, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Bold
+                                Height: =If(Self.Width>=200,Parent.Height*.4,Parent.Height*.35)
+                                PaddingBottom: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Size: =If(Self.Width>=210,15,13)
+                                Text: ="Category"
+                                Width: =Parent.Width*.36
+                                X: =97
+                                Y: =400
+                                ZIndex: =2
+
+                            TextInput2_96 As text:
+                                BorderColor: =RGBA(3, 91, 108, 1)
+                                BorderThickness: =2
+                                Color: =RGBA(77, 77, 77, 1)
+                                Default: =First(Currentdata).Category
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                DisplayMode: =DisplayMode.View
+                                Fill: =RGBA(0, 0, 0, 0)
+                                FocusedBorderThickness: =4
+                                Font: =Font.'Segoe UI'
+                                Height: =If(Self.Width>=540,Parent.Height*.45,Parent.Height*.35)
+                                HoverBorderColor: =RGBA(32, 54, 71, 1)
+                                HoverColor: =RGBA(0, 0, 0, 1)
+                                HoverFill: =RGBA(205, 209, 213, 1)
+                                RadiusBottomLeft: =30
+                                RadiusBottomRight: =30
+                                RadiusTopLeft: =30
+                                RadiusTopRight: =30
+                                Size: =If(Self.Width>=325,13,10)
+                                Width: =Parent.Width*.6-Image2_32.Width
+                                X: =97
+                                Y: =40
+                                ZIndex: =3
+
+                        Container35_62 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            FillPortions: =0
+                            Height: =Parent.Height*.1
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutGap: =2
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.Width
+                            ZIndex: =8
+
+                            Image2_37 As image:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                Height: =Parent.Width*.04
+                                Image: =manager
+                                Width: =Parent.Width*.04
+                                ZIndex: =1
+
+                            Label17_115 As label:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                Color: =RGBA(3, 91, 108, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Bold
+                                Height: =If(Self.Width>=200,Parent.Height*.4,Parent.Height*.35)
+                                PaddingBottom: =0
+                                PaddingRight: =0
+                                PaddingTop: =0
+                                Size: =If(Self.Width>=210,15,13)
+                                Text: ="Manager Name"
+                                Width: =Parent.Width*.36
+                                X: =5
+                                Y: =390
+                                ZIndex: =2
+
+                            TextInput2_97 As text:
+                                BorderColor: =RGBA(3, 91, 108, 1)
+                                BorderThickness: =2
+                                Color: =RGBA(77, 77, 77, 1)
+                                Default: =First(Currentdata).Manager_Name
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                DisplayMode: =DisplayMode.View
+                                Fill: =RGBA(0, 0, 0, 0)
+                                FocusedBorderThickness: =4
+                                Font: =Font.'Segoe UI'
+                                Height: =If(Self.Width>=540,Parent.Height*.45,Parent.Height*.35)
+                                HoverBorderColor: =RGBA(32, 54, 71, 1)
+                                HoverColor: =RGBA(0, 0, 0, 1)
+                                HoverFill: =RGBA(205, 209, 213, 1)
+                                RadiusBottomLeft: =30
+                                RadiusBottomRight: =30
+                                RadiusTopLeft: =30
+                                RadiusTopRight: =30
+                                Size: =If(Self.Width>=325,13,10)
+                                Width: =Parent.Width*.6-Image2_32.Width
+                                X: =692
+                                Y: =50
+                                ZIndex: =3
+
+                        Container35_63 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            FillPortions: =0
+                            Height: =Parent.Height*.1
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutGap: =2
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Visible: |-
+                                =//true
+                                
+                                If(And(ManagerView=false,First(Currentdata).'Approvel Status'.Value="Accepted"),true,false)
+                            Width: =Parent.Width
+                            ZIndex: =9
+
+                            Image2_39 As image:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                Height: =Parent.Width*.04
+                                Image: ='approved-ammount'
+                                Width: =Parent.Width*.04
+                                ZIndex: =4
+
+                            Label17_116 As label:
+                                BorderColor: =RGBA(32, 54, 71, 1)
+                                Color: =RGBA(3, 91, 108, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Bold
+                                Height: |-
+                                    =//If(Self.Width>=540,Parent.Height*.45,Parent.Height*.35)
+                                    If(Container33_46.Height>=100,Parent.Height*.45,Parent.Height*.3)
+                                Size: =If(Self.Width>=190,15,12)
+                                Text: ="Approved Amount"
+                                Width: =Parent.Width*.36
+                                X: =629
+                                Y: =330
+                                ZIndex: =5
+
+                            TextInput2_99 As text:
+                                BorderColor: =RGBA(3, 91, 108, 1)
+                                BorderThickness: =7
+                                Color: =RGBA(77, 77, 77, 1)
+                                Default: ="Rs. " & First(Currentdata).'Approved Amount' & " /-"
+                                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                DisabledFill: =RGBA(244, 244, 244, 1)
+                                DisplayMode: =DisplayMode.View
+                                Fill: =RGBA(0, 0, 0, 0)
+                                FocusedBorderThickness: =4
+                                Font: =Font.'Segoe UI'
+                                Height: |-
+                                    =//If(Self.Width>=540,Parent.Height*.45,Parent.Height*.35)
+                                    If(Container33_46.Height>=100,Parent.Height*.45,Parent.Height*.3)
+                                HoverBorderColor: =RGBA(32, 54, 71, 1)
+                                HoverColor: =RGBA(0, 0, 0, 1)
+                                HoverFill: =RGBA(205, 209, 213, 1)
+                                RadiusBottomLeft: =30
+                                RadiusBottomRight: =30
+                                RadiusTopLeft: =30
+                                RadiusTopRight: =30
+                                Size: =If(Self.Width>=380,13,10)
+                                Width: =Parent.Width*.6-Image2_32.Width
+                                X: =629
+                                Y: =374
+                                ZIndex: =6
+
+                        Container35_64 As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.Center
+                            FillPortions: =0
+                            Height: =Parent.Height*.1
+                            LayoutAlignItems: =LayoutAlignItems.Center
+                            LayoutGap: =10
+                            LayoutJustifyContent: =LayoutJustifyContent.Center
+                            LayoutMinHeight: =100
+                            LayoutMinWidth: =250
+                            LayoutMode: =LayoutMode.Auto
+                            RadiusBottomLeft: =4
+                            RadiusBottomRight: =4
+                            RadiusTopLeft: =4
+                            RadiusTopRight: =4
+                            Width: =Parent.Width
+                            ZIndex: =10
+
+                    Container80_9 As groupContainer.horizontalAutoLayoutContainer:
+                        FillPortions: =0
+                        Height: =Parent.Height*.1
+                        LayoutAlignItems: =LayoutAlignItems.Center
+                        LayoutGap: =10
+                        LayoutJustifyContent: =LayoutJustifyContent.End
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        PaddingRight: =10
+                        RadiusBottomLeft: =4
+                        RadiusBottomRight: =4
+                        RadiusTopLeft: =4
+                        RadiusTopRight: =4
+                        Visible: =If(First(Currentdata).'Approvel Status'.Value="Pending",true,false)
+                        ZIndex: =2
+
+    Rectangle5_1 As rectangle:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Fill: =RGBA(100, 118, 132, .6)
+        Height: =Container67_2.Height
+        OnSelect: |-
+            =Set(
+                VarShowInvoice,
+                false
+            )
+        Visible: =VarShowInvoice
+        Width: =Container67_4.Width
+        X: =Container67.X
+        Y: =Container67.Y
+        ZIndex: =4
+
+    Image1_1 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: ='Dashboard New Screen'.Height*.6
+        Image: =VarInvoice
+        OnSelect: |-
+            =//false
+            Set(
+                VarShowInvoice,
+                false
+            )
+        Visible: =VarShowInvoice
+        Width: ='Dashboard New Screen'.Height*.6
+        X: ='Dashboard New Screen'.Width/2-Self.Width/2
+        Y: ='Dashboard New Screen'.Height/2-Self.Height/2
+        ZIndex: =5
+

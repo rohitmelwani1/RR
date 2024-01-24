@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "b8fc49f5-cdf9-4fcf-b63e-845b7ad52f78",
+    "Name": "ReimburseApproveMail",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "ef006c78-a97c-ee11-8179-000d3a473896"
+  }
+]

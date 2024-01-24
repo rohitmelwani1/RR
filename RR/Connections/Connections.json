@@ -1,0 +1,89 @@
+{
+  "300751ad-5b2d-4184-b2c9-4de86937b7bd": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://appcinotechnologies.sharepoint.com/sites/PowerAppUseCase": {
+        "dataSources": {
+          "RR_Employee_sp": {
+            "tableName": "e51c4af4-3e86-4366-8651-71cfe5d6a5bf"
+          },
+          "RR_Lookup_Category": {
+            "tableName": "5615e90d-bce7-4543-9884-77e883bf14ea"
+          },
+          "RR_Support_sp": {
+            "tableName": "aeb28fcd-d97c-4683-9775-62255c07191e"
+          },
+          "Users": {
+            "tableName": "5eae8792-1e73-4385-b468-1cb1fc39b32f"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "RR_Lookup_Category",
+      "RR_Employee_sp",
+      "RR_NavList",
+      "Users",
+      "RR_Support_sp"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "300751ad-5b2d-4184-b2c9-4de86937b7bd"
+  },
+  "6f0860d6-43af-40e7-8f82-35260f5a8098": {
+    "connectionRef": {
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "f7f2c8d9-3a53-4774-8929-ffa712b3a6ce"
+    ],
+    "id": "6f0860d6-43af-40e7-8f82-35260f5a8098"
+  },
+  "f7f2c8d9-3a53-4774-8929-ffa712b3a6ce": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "6f0860d6-43af-40e7-8f82-35260f5a8098": {
+          "value": "shared_office365"
+        },
+        "workflowEntityId": {
+          "value": "ef006c78-a97c-ee11-8179-000d3a473896"
+        },
+        "workflowName": {
+          "value": "93989a11-f254-4f80-afbe-f21a1ad6e186"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_office365": {
+          "value": "6f0860d6-43af-40e7-8f82-35260f5a8098"
+        },
+        "workflowEntityId": {
+          "value": "ef006c78-a97c-ee11-8179-000d3a473896"
+        },
+        "workflowName": {
+          "value": "93989a11-f254-4f80-afbe-f21a1ad6e186"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "ReimburseApproveMail"
+    ],
+    "dependencies": {
+      "shared_office365": "6f0860d6-43af-40e7-8f82-35260f5a8098"
+    },
+    "dependents": [],
+    "id": "f7f2c8d9-3a53-4774-8929-ffa712b3a6ce"
+  }
+}

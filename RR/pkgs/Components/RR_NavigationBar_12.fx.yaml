@@ -1,0 +1,141 @@
+RR_NavigationBar_12 As CanvasComponent:
+    CurrentScreen: ="Text"
+    Fill: =RGBA(247, 246, 251, 0)
+    Height: =RR_NavigationBar_12.navHeight
+    navHeight: |
+        =Max(App.Height, App.MinScreenHeight)
+    navItem: |-
+        =Table(
+            {
+                Title: "Dashboard",
+                TargetScreen: App.ActiveScreen,
+                icon : Icon.Waffle
+            },
+              {
+                Title: "Total Requests",
+                TargetScreen: App.ActiveScreen,
+                icon : Icon.Database
+            },
+            {
+                Title: "Summary",
+                TargetScreen: App.ActiveScreen,
+                icon : Icon.DocumentWithContent
+            },
+            {
+                Title: "New Claim",
+                TargetScreen: App.ActiveScreen,
+                icon : Icon.Scan
+            },
+            {
+                Title: "Support",
+                TargetScreen: App.ActiveScreen,
+                icon : Icon.Support
+            },
+             {
+                Title: "Log Out",
+                TargetScreen: App.ActiveScreen,
+                icon : Icon.Leave
+            }
+        )
+    NavItemss: =
+    navWidth: |+
+        =Max(App.Width, App.MinScreenWidth)/6
+        
+    Width: =RR_NavigationBar_12.navWidth
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    NavContainer_4 As groupContainer.manualLayoutContainer:
+        BorderStyle: =BorderStyle.None
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(3, 91, 108, 1)
+        Height: |-
+            =//RR_NavigationBar.Height
+            Parent.Height
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =50
+        RadiusTopLeft: =4
+        RadiusTopRight: =50
+        Width: =Parent.Width
+        ZIndex: =2
+
+        Gallery2_4 As gallery.galleryVertical:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderStyle: =BorderStyle.None
+            DelayItemLoading: =true
+            Fill: =RGBA(3, 91, 108, 1)
+            Height: =668
+            Items: =RR_NavigationBar_12.navItem
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            OnSelect: =true; Navigate(ThisItem.TargetScreen,ScreenTransition.Fade)
+            TemplateFill: =If(ThisItem.Title=RR_NavigationBar_12.CurrentScreen,RGBA(255,255,255,1),RGBA(3, 91, 108, 1))
+            TemplateSize: =82
+            Transition: =Transition.Pop
+            Width: =227.66666666666666
+            Y: =100
+            ZIndex: =1
+
+            NavNAme_4 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =If(ThisItem.Title=RR_NavigationBar_12.CurrentScreen, RGBA(77, 77, 77, 1),RGBA(255,255,255,1))
+                DisabledColor: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(255, 255, 255, 0)
+                Font: =Font.Verdana
+                FontWeight: =FontWeight.Bold
+                Height: =82
+                OnSelect: =Select(Parent)
+                Size: =If(RR_NavigationBar_12.Width>190,12,10)
+                Text: =ThisItem.Title
+                Visible: =If(RR_NavigationBar_12.Width>150,true,false)
+                Width: =184
+                X: =If(RR_NavigationBar_12.Width>190,33,20)
+                ZIndex: =1
+
+            Icon3_3 As icon.Waffle:
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =If(ThisItem.Title=RR_NavigationBar_12.CurrentScreen, RGBA(77, 77, 77, 1),RGBA(255,255,255,1))
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(255, 255, 255, 0)
+                Height: =30
+                Icon: =ThisItem.icon
+                OnSelect: =Select(Parent)
+                Width: =30
+                X: =24
+                Y: =26
+                ZIndex: =2
+
+        Image3_4 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: =ReimburseRapid
+            ImagePosition: =ImagePosition.Center
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Visible: =If(RR_NavigationBar_12.Width>170,true,false)
+            Width: =227.66666666666666
+            ZIndex: =3
+
+        Label1_4 As label:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =100
+            Size: =21
+            Text: ="RR"
+            Visible: =If(RR_NavigationBar_12.Width>170,false,true)
+            Width: =Parent.Width
+            X: =If(Parent.Width>150,(Parent.Width-Self.Width)/4,(Parent.Width-Self.Width)/5)
+            ZIndex: =4
+

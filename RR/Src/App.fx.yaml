@@ -1,0 +1,111 @@
+App As appinfo:
+    BackEnabled: =true
+    OnStart: |+
+        =ClearCollect(
+            NavManagerView,
+            Table(
+                {
+                    Title: "Dashboard",
+                    TargetScreen: 'Dashboard New Screen',
+                    icon: Icon.Waffle
+                },
+                {
+                    Title: "Total Requests",
+                    TargetScreen: 'Total Request New Screen',
+                    icon: Icon.Database
+                },
+                {
+                    Title: "New Claim",
+                    TargetScreen: 'New Claim New Screen',
+                    icon: Icon.Scan
+                },
+                {
+                    Title: "Support",
+                    TargetScreen: 'Support Screen',
+                    icon: Icon.Support
+                },
+                {
+                    Title: "Log Out",
+                    TargetScreen: 'Login Screen',
+                    icon: Icon.Leave
+                }
+            )
+        );
+        ClearCollect(
+            NavEmployeeView,
+            Table(
+                {
+                    Title: "Dashboard",
+                    TargetScreen: 'Dashboard New Screen',
+                    icon: Icon.Waffle
+                },
+                {
+                    Title: "Summary",
+                    TargetScreen: 'Request Summary New Screen',
+                    icon: Icon.DocumentWithContent
+                },
+                {
+                    Title: "New Claim",
+                    TargetScreen: 'New Claim New Screen',
+                    icon: Icon.Scan
+                },
+                {
+                    Title: "Support",
+                    TargetScreen: 'Support Screen',
+                    icon: Icon.Support
+                },
+                {
+                    Title: "Log Out",
+                    TargetScreen: 'Login Screen',
+                    icon: Icon.Leave
+                }
+            )
+        );
+        Set(
+            pp,
+            "Appcino" & Label16.Text
+        );
+        Set(
+            val,
+            Search(
+                Users,
+                pp,
+                "Title"
+            )
+        );
+        ClearCollect(
+            DropDownmanager,
+            Table(
+                {Name: "Alisha Siddiqui"},
+                {Name: "Arihant Mehta"},
+                {Name: "Chetan Kumar Meena"},
+                {Name: "Aditi Sharma"}
+            )
+        );
+        
+        ClearCollect(FilteredData, RR_Employee_sp);
+        Set(
+            VarShowSummary,
+            false
+        );
+        Set(
+            VarShowInvoice,
+            false
+        );
+        Set(
+            VarShowSupportmail,
+            false
+        );
+        
+        
+        
+        
+    Theme: =PowerAppsTheme
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+

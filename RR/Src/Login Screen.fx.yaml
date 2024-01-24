@@ -1,0 +1,248 @@
+"'Login Screen' As screen":
+    Height: |-
+        =//Max(App.Height, App.MinScreenHeight)
+        Max(App.Height, App.MinScreenHeight)
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+
+    Container2 As groupContainer.horizontalAutoLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =Parent.Height
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =Parent.Width
+        ZIndex: =1
+
+        Container9 As groupContainer.verticalAutoLayoutContainer:
+            DropShadow: =DropShadow.Light
+            FillPortions: =1.5
+            LayoutDirection: |
+                =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusTopLeft: =4
+            ZIndex: =1
+
+            Image2_1 As image:
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =RGBA(32, 54, 71, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Height: =Parent.Height*.2
+                Image: ='black white Thunder logo (4)'
+                Width: =Parent.Width
+                Y: =238
+                ZIndex: =1
+
+            Label2_16 As label:
+                Align: =Align.Center
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(77, 77, 77, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.Lato
+                FontWeight: =FontWeight.Bold
+                Height: =70
+                Size: =20
+                Text: ="""Expense Relief, One Click Away"""
+                Width: =Parent.Width*.6
+                X: =412
+                Y: =385
+                ZIndex: =2
+
+        Container16 As groupContainer.verticalAutoLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(231, 238, 240, 1)
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =2
+
+            Container17 As groupContainer.verticalAutoLayoutContainer:
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutJustifyContent: =LayoutJustifyContent.End
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingBottom: =30
+                ZIndex: =1
+
+                Container3 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    DropShadow: =DropShadow.Light
+                    Fill: =RGBA(255, 255, 255, 1)
+                    FillPortions: =0
+                    Height: =Parent.Height*.7
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =40
+                    RadiusBottomRight: =40
+                    RadiusTopLeft: =40
+                    RadiusTopRight: =40
+                    Width: =Parent.Width*.80
+                    ZIndex: =2
+
+                    Image7_1 As image:
+                        AlignInContainer: =AlignInContainer.Center
+                        BorderColor: =RGBA(32, 54, 71, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Height: |-
+                            =//If(ScreenSize=2,60,If(ScreenSize=3,80,110))
+                            If(And(Container3.Height>=268,Container3.Width>=436),110,80)
+                        Image: =manager
+                        Width: |-
+                            =//If(ScreenSize=2,60,If(ScreenSize=3,80,110))
+                            If(And(Container3.Height>=268,Container3.Width>=436),110,80)
+                        X: =173
+                        Y: =29
+                        ZIndex: =1
+
+                    Detail_1 As label:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(32, 54, 71, 1)
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =Font.Lato
+                        Height: =If(And(Container3.Height>=268,Container3.Width>=436),Parent.Width*.1,Parent.Width*.06)
+                        PaddingBottom: =10
+                        PaddingLeft: =10
+                        PaddingRight: =10
+                        PaddingTop: =10
+                        Size: |-
+                            =//If(ScreenSize=2,6,If(ScreenSize=3,9,12))
+                            If(And(Container3.Height>=268,Container3.Width>=436),13,8)
+                        Text: ="TO SUBMIT REIMBURSEMENT REQUEST"
+                        Width: |-
+                            =//Parent.Width*.9
+                            If(And(Container3.Height>=268,Container3.Width>=436),Parent.Width*.9,Parent.Width*.8)
+                        X: =104
+                        Y: =129
+                        ZIndex: =2
+
+                    LoginButton_1 As button:
+                        BorderColor: =RGBA(3, 91, 108, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Fill: =RGBA(3, 91, 108, 1)
+                        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                        FontWeight: =FontWeight.Semibold
+                        Height: |-
+                            =//If(ScreenSize=2,20,If(ScreenSize=3,30,30))
+                            If(And(Container3.Height>=268,Container3.Width>=436),35,30)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =ColorFade(Self.BorderColor, 20%)
+                        OnSelect: =Set(ManagerView,false);Navigate('Dashboard New Screen')
+                        Size: |-
+                            =//If(ScreenSize=2,6,If(ScreenSize=3,9,12))
+                            If(And(Container3.Height>=268,Container3.Width>=436),13,10)
+                        Text: ="Login as Employee"
+                        Width: |-
+                            =//Parent.Width*.6
+                            If(And(Container3.Height>=268,Container3.Width>=436),Parent.Width*.7,Parent.Width*.6)
+                        X: =118
+                        Y: =172
+                        ZIndex: =3
+
+            Container20 As groupContainer.verticalAutoLayoutContainer:
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingTop: =30
+                ZIndex: =3
+
+                Container8 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Center
+                    DropShadow: =DropShadow.Light
+                    Fill: =RGBA(255, 255, 255, 1)
+                    FillPortions: =0
+                    Height: =Parent.Height*.7
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    RadiusBottomLeft: =40
+                    RadiusBottomRight: =40
+                    RadiusTopLeft: =40
+                    RadiusTopRight: =40
+                    Width: =Parent.Width*.80
+                    ZIndex: =1
+
+                    Image8_1 As image:
+                        BorderColor: =RGBA(32, 54, 71, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Height: =If(And(Container8.Height>=268,Container8.Width>=436),120,80)
+                        Image: ='Employee-new'
+                        PaddingBottom: =5
+                        PaddingLeft: =5
+                        PaddingRight: =5
+                        PaddingTop: =5
+                        Width: |-
+                            =//If(ScreenSize=2,60,If(ScreenSize=3,80,110))
+                            If(And(Container8.Height>=268,Container8.Width>=436),120,80)
+                        X: =179
+                        Y: =32
+                        ZIndex: =1
+
+                    deatils_1 As label:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(32, 54, 71, 1)
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =Font.Lato
+                        Height: =If(And(Container8.Height>=268,Container8.Width>=436),Parent.Width*.1,Parent.Width*.06)
+                        PaddingBottom: =10
+                        PaddingLeft: =10
+                        PaddingRight: =10
+                        PaddingTop: =10
+                        Size: |-
+                            =//If(ScreenSize=2,6,If(ScreenSize=3,9,12))
+                            If(And(Container8.Height>=268,Container8.Width>=436),13,8)
+                        Text: ="TO ACCEPT OR DECLINE THE REQUESTS"
+                        Width: |-
+                            =//Parent.Width*.9
+                            If(And(Container3.Height>=268,Container3.Width>=436),Parent.Width*.9,Parent.Width*.8)
+                        X: =100
+                        Y: =132
+                        ZIndex: =2
+
+                    LoginButtonn_1 As button:
+                        BorderColor: =RGBA(3, 91, 108, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Fill: =RGBA(3, 91, 108, 1)
+                        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                        FontWeight: =FontWeight.Semibold
+                        Height: |-
+                            =//If(ScreenSize=2,20,If(ScreenSize=3,30,30))
+                            If(And(Container3.Height>=268,Container3.Width>=436),35,30)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =ColorFade(Self.BorderColor, 20%)
+                        OnSelect: =Set(ManagerView,true);Navigate('Dashboard New Screen')
+                        Size: |-
+                            =//If(ScreenSize=2,6,If(ScreenSize=3,9,12))
+                            If(And(Container8.Height>=268,Container8.Width>=436),13,10)
+                        Text: ="Login as Manager"
+                        Width: |-
+                            =//Parent.Width*.6
+                            If(And(Container8.Height>=268,Container8.Width>=436),Parent.Width*.7,Parent.Width*.6)
+                        X: =123
+                        Y: =179
+                        ZIndex: =3
+

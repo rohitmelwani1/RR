@@ -1,0 +1,451 @@
+"'Approval Screen' As screen":
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+
+    Container5_1 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(236, 242, 244, 1)
+        Height: =768
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =1139
+        X: =227
+        ZIndex: =2
+
+        Image10_1 As image:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =DisplayMode.View
+            Height: =120
+            Image: =LookUp(Users,Title=Label16_1.Text).'Profile Picture'
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Width: =117
+            X: =430
+            Y: =11
+            ZIndex: =1
+
+        Label8_1 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(3, 91, 108, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =DisplayMode.View
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =45
+            Size: =25
+            Text: =First(Currentdata).'First Name'
+            Width: =Len(Self.Text)*Self.Size
+            X: =311
+            Y: =113
+            ZIndex: =2
+
+        Label16_1 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(3, 91, 108, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =38
+            Size: =15
+            Text: =First(Currentdata).EmployeeID
+            Width: =184
+            X: =403
+            Y: =163
+            ZIndex: =3
+
+        Arrow1_1 As arrow.backArrow:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(3, 91, 108, 1)
+            OnSelect: =Back()
+            Tooltip: ="Back"
+            X: =1076
+            Y: =13
+            ZIndex: =4
+
+        TextInput2_6 As text:
+            BorderColor: =RGBA(3, 91, 108, 1)
+            BorderThickness: =2
+            Color: =RGBA(77, 77, 77, 1)
+            Default: =First(Currentdata).Email
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =DisplayMode.View
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            HoverBorderColor: =RGBA(32, 54, 71, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(205, 209, 213, 1)
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
+            Size: =13
+            X: =93
+            Y: =235
+            ZIndex: =5
+
+        Label17_7 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(3, 91, 108, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Size: =17
+            Text: ="Email"
+            X: =97
+            Y: =192
+            ZIndex: =6
+
+        Label17_12 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(3, 91, 108, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Size: =17
+            Text: ="Category"
+            X: =97
+            Y: =400
+            ZIndex: =7
+
+        Label17_10 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(3, 91, 108, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Size: =17
+            Text: ="Start Date"
+            X: =93
+            Y: =295
+            ZIndex: =8
+
+        Label17_9 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(3, 91, 108, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Size: =17
+            Text: ="End Date"
+            X: =692
+            Y: =288
+            ZIndex: =9
+
+        Label17_8 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(3, 91, 108, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Size: =17
+            Text: ="Total Amount"
+            Width: =203
+            X: =686
+            Y: =194
+            ZIndex: =10
+
+        Label17_11 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(3, 91, 108, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =31
+            Size: =17
+            Text: ="Invoice"
+            Width: =115
+            X: =697
+            Y: =500
+            ZIndex: =12
+
+        TextInput2_8 As text:
+            BorderColor: =RGBA(3, 91, 108, 1)
+            BorderThickness: =2
+            Color: =RGBA(77, 77, 77, 1)
+            Default: =First(Currentdata).'Start Date'
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =DisplayMode.View
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            HoverBorderColor: =RGBA(32, 54, 71, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(205, 209, 213, 1)
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
+            Size: =13
+            X: =97
+            Y: =335
+            ZIndex: =13
+
+        TextInput2_7 As text:
+            BorderColor: =RGBA(3, 91, 108, 1)
+            BorderThickness: =2
+            Color: =RGBA(77, 77, 77, 1)
+            Default: =First(Currentdata).'End Date'
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =DisplayMode.View
+            FocusedBorderThickness: =4
+            HoverBorderColor: =RGBA(32, 54, 71, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(205, 209, 213, 1)
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
+            Size: =13
+            X: =689
+            Y: =328
+            ZIndex: =14
+
+        TextInput2_5 As text:
+            BorderColor: =RGBA(3, 91, 108, 1)
+            BorderThickness: =7
+            Color: =RGBA(77, 77, 77, 1)
+            Default: ="Rs. "&First(Currentdata).'Total Amount'&" /-"
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =DisplayMode.View
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            HoverBorderColor: =RGBA(32, 54, 71, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(205, 209, 213, 1)
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
+            Size: =13
+            X: =686
+            Y: =232
+            ZIndex: =15
+
+        Image15_1 As image:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =128
+            Image: =First(Currentdata).Invoice
+            Width: =156
+            X: =697
+            Y: =531
+            ZIndex: =16
+
+        Label17_13 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(3, 91, 108, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =DisplayMode.View
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Size: =17
+            Text: ="Approve Amount"
+            Visible: =If(First(Currentdata).'Approvel Status'.Value="Pending",true,false)
+            Width: =203
+            X: =97
+            Y: =499
+            ZIndex: =20
+
+        TextInput2_9 As text:
+            BorderColor: =RGBA(3, 91, 108, 1)
+            BorderThickness: =0
+            Color: =RGBA(77, 77, 77, 1)
+            Default: =""
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Format: =TextFormat.Number
+            HintText: ="Enter the Amount to be Approved"
+            HoverBorderColor: =RGBA(32, 54, 71, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(205, 209, 213, 1)
+            OnChange: =Set(ApprovedAmt,Value(TextInput2_9.Text))
+            OnSelect: =
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
+            Reset: =true
+            Size: =13
+            Tooltip: ="Enter Amount to Approve"
+            Visible: =If(First(Currentdata).'Approvel Status'.Value="Pending",true,false)
+            X: =97
+            Y: =537
+            ZIndex: =21
+
+        TextInput2_10 As text:
+            BorderColor: =RGBA(3, 91, 108, 1)
+            BorderThickness: =2
+            Color: =RGBA(77, 77, 77, 1)
+            Default: =First(Currentdata).Category
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =DisplayMode.View
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            HoverBorderColor: =RGBA(32, 54, 71, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(205, 209, 213, 1)
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
+            Size: =13
+            X: =97
+            Y: =440
+            ZIndex: =22
+
+        Label17_14 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(3, 91, 108, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =43
+            Size: =17
+            Text: ="Manager Name"
+            Width: =180
+            X: =697
+            Y: =390
+            ZIndex: =23
+
+        TextInput2_12 As text:
+            BorderColor: =RGBA(3, 91, 108, 1)
+            BorderThickness: =2
+            Color: =RGBA(77, 77, 77, 1)
+            Default: =First(Currentdata).Manager_Name
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =DisplayMode.View
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            HoverBorderColor: =RGBA(32, 54, 71, 1)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(205, 209, 213, 1)
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
+            Size: =13
+            X: =692
+            Y: =440
+            ZIndex: =24
+
+    Container6 As groupContainer.manualLayoutContainer:
+        Height: =72
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Visible: =If(First(Currentdata).'Approvel Status'.Value="Pending",true,false)
+        Width: =987
+        X: =280
+        Y: =660
+        ZIndex: =3
+
+        Button7_6 As button:
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(255, 71, 14, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(255, 218, 220, 1)
+            FontWeight: =FontWeight.Semibold
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+            OnSelect: |
+                =Patch(
+                    RR_Employee_sp,
+                    {
+                        ID: First(Currentdata).ID,
+                        'Approvel Status': {Value: "Rejected"}
+                    }
+                );
+                Set(
+                    Status1,
+                    "Rejected"
+                );
+                ReimburseApproveMail.Run(
+                    TextInput2_6.Text,
+                    Status1,
+                    First(Currentdata).'Total Amount',
+                    ApprovedAmt,
+                    First(Currentdata).'Rejected Amount',
+                    First(Currentdata).Manager_Name
+                );
+                Back();
+                Refresh(RR_Employee_sp);
+            Size: =15
+            Text: ="Reject"
+            Tooltip: ="Reject Employee's Request"
+            Width: =303
+            X: =38
+            Y: =20
+            ZIndex: =1
+
+        Button7_5 As button:
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 172, 79, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(217, 255, 234, 1)
+            FontWeight: =FontWeight.Bold
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            OnSelect: |-
+                =If(ApprovedAmt>0,
+                Patch(
+                    RR_Employee_sp,
+                    {
+                        ID:First(Currentdata).ID,
+                        'Approvel Status': {Value: "Accepted"},
+                        'Total Amount': First(Currentdata).'Total Amount',
+                        'Approved Amount': ApprovedAmt
+                    }
+                ),
+                Patch(
+                    RR_Employee_sp,
+                    {
+                        ID:First(Currentdata).ID,
+                        'Approvel Status': {Value: "Accepted"}
+                    }
+                ));
+                ReimburseApproveMail.Run(
+                    TextInput2_6.Text,
+                    "Accepted",
+                    First(Currentdata).'Total Amount',
+                    ApprovedAmt,
+                    LookUp(RR_Employee_sp,ID=selId).'Rejected Amount',
+                    First(Currentdata).Manager_Name
+                );
+                Back();
+                Refresh(RR_Employee_sp)
+            Size: =15
+            Text: ="Accept"
+            Width: =303
+            X: =600
+            Y: =20
+            ZIndex: =2
+
+    RR_NavigationBar_7 As Old_RR_NavBar:
+        ZIndex: =4
+
